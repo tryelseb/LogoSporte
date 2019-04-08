@@ -28,7 +28,7 @@
 	content: "";
 	top: 0;
 	left: 0;
-	background-color: rgba(#e05141, .5);
+	background-color: rgba($main-color, .5);
 	width: 60px;
 	height: 60px;
 	border-radius: 100%;
@@ -38,7 +38,7 @@
 }
 
 .scrollTop:before {
-	background-color: rgba(#e05141, .4);
+	background-color: rgba($main-color, .4);
 	animation: clickMe 1.8s 333ms infinite ease-out;
 }
 
@@ -50,7 +50,7 @@
 	width: 30px;
 	height: 30px;
 	display: block;
-	background: #e05141;
+	background: $main-color;
 	color: #fff;
 	text-align: center;
 	line-height: 30px;

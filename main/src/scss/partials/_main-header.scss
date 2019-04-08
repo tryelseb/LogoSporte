@@ -1,0 +1,116 @@
+.main-header {
+    padding: 18px 0;
+    border-bottom: 1px solid #f7f7f7;
+
+    .logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        &__list {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__link {
+            color: $text-color_1;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+    }
+
+    .btn-lg {
+        @include header-button(transparent);
+        width: 110px;
+    }
+
+    .btn-sg {
+        @include header-button($main-color);
+        color: $white-color;
+    }
+
+    // Header construct page
+    .wrp-const {
+        padding-left: 30px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .info {
+            display: flex;
+            .user-name {
+                font-weight: 600;
+                color: $text-color_2;
+                font-size: 14px;
+                line-height: 1;
+                display: block;
+                margin-right: 5px;
+            }
+            .fa-chevron-down {
+                color: $text-color_2;
+                cursor: pointer;
+            }
+        }
+        .const__prise {
+            font-weight: 600;
+            line-height: 1.5;
+            color: $main-color;
+            &::after {
+                
+            }
+        }
+
+        .fa-envelope {
+            color: $text-color_3;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .wrp-ring {
+            position: relative;
+
+            .bg-color {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                width: 13px;
+                height: 13px;
+                right: -6px;
+                top: -6px;
+                background-color: $main-color;
+                border-radius: 50%;
+
+                span {
+                    font-size: 8px;
+                    font-weight: 400;
+                    color: $white-color;
+                }
+            }
+
+            .fa-bell {
+                color: $text-color_3;
+                font-size: 18px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .wrp-img {
+        height: 34px;
+        width: 34px;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+}

@@ -1,48 +1,93 @@
-html, body {
+html,
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+    font-size: 14px;
+    font-family: $main-font;
+}
 
-}
 @font-face {
-  font-family: 'Myfont';
-  src: url('../fonts/myfont.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/myfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/myfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/myfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/myfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/myfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-family: 'Myfont';
+    src: url('../fonts/myfont.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/myfont.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/myfont.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/myfont.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/myfont.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/myfont.svg#svgFontName') format('svg');
+    /* Legacy iOS */
 }
+
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-p{
-	margin: 0;
-}
 
-h1, h2, h3, h4, h5{
+p {
     margin: 0;
 }
-i {
-  font-family: 'Myfont';
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
 }
-.active{
-          color: #ff636a !important;
-        }
-.mb{
+
+i {
+    font-family: 'Myfont';
+}
+
+.active {
+    color: #ff636a !important;
+}
+
+.mb {
     margin-bottom: 2em;
 }
-#formMessage{
-  font-size: 18px;
-  text-align: center;
-  background-color: #fff;
-  margin-bottom: .5em;
-  border: 1px solid #ff636a;
+
+#formMessage {
+    font-size: 18px;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: .5em;
+    border: 1px solid #ff636a;
 }
-::-webkit-input-placeholder {color:#ffffff;}
-::-moz-placeholder          {color:#ffffff;}
-:-moz-placeholder           {color:#ffffff;}
-:-ms-input-placeholder      {color:#ffffff;}
+
+::-webkit-input-placeholder {
+    color: $text-color_2;
+}
+
+::-moz-placeholder {
+    color: $text-color_2;
+}
+
+:-moz-placeholder {
+    color: $text-color_2;
+}
+
+:-ms-input-placeholder {
+    color: $text-color_2;
+}
+
+.btn:first-child {
+    margin-right: 15px;
+}
+
+.title {
+  margin-bottom: 27px;
+    &>* {
+        font-family: $main-font;
+        color: $text-color_1;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+}

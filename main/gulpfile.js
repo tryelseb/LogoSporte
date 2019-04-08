@@ -104,7 +104,7 @@ gulp.task('tinypng', function () {
 
 gulp.task('watch', () => {
  gulp.watch('src/scss/**/*.scss', gulp.series('style')),
- gulp.watch('src/index.html', gulp.series('html')),
+ gulp.watch('src/*.html', gulp.series('html')),
  gulp.watch('src/js/**/*.js', gulp.series('js')),
  gulp.watch('src/img/**/*.*', gulp.series('image')),
  gulp.watch('src/fonts/**/*.*', gulp.series('fonts'))
