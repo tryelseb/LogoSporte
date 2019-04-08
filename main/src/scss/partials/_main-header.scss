@@ -2,39 +2,64 @@
     padding: 18px 0;
     border-bottom: 1px solid #f7f7f7;
 
-    .logo {
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
+    .my-d-flex {
+        height: 43px;
+        display: block;
 
-    .menu {
-        height: 100%;
-        display: flex;
-        align-items: center;
-
-        &__list {
-            width: 100%;
+        @media screen and (min-width: 766px) {
             display: flex;
             align-items: center;
             justify-content: space-between;
+        }
+    }
+
+    .logo {
+        text-align: left;
+        & a {
+            display: inline-block;
+        }
+    }
+
+    .menu {
+        @media screen and (min-width: 766px) {
+            width: 250px;
+        }
+
+        &__list {
+            width: 100%;
+            display: block;
+            text-align: center;
+
+            @media screen and (min-width: 766px) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
         }
 
         &__link {
             color: $text-color_1;
             text-transform: capitalize;
             font-weight: 600;
+            font-size: 18px;
+            border-bottom: 1px solid $border-color;
+
+            @media screen and (min-width: 766px) {
+                font-size: 14px;
+                border: none;
+            }
         }
     }
 
     .btn-lg {
         @include header-button(transparent);
-        width: 110px;
+        padding: 11px 18px;
     }
 
     .btn-sg {
         @include header-button($main-color);
         color: $white-color;
+        padding: 11px 18px;
     }
 
     // Header construct page
@@ -47,6 +72,7 @@
 
         .info {
             display: flex;
+
             .user-name {
                 font-weight: 600;
                 color: $text-color_2;
@@ -55,18 +81,19 @@
                 display: block;
                 margin-right: 5px;
             }
+
             .fa-chevron-down {
                 color: $text-color_2;
                 cursor: pointer;
             }
         }
+
         .const__prise {
             font-weight: 600;
             line-height: 1.5;
             color: $main-color;
-            &::after {
-                
-            }
+
+            &::after {}
         }
 
         .fa-envelope {

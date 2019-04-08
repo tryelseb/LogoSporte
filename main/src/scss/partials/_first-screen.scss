@@ -4,7 +4,13 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right 109px;
-
+    @media screen and (max-width: 765px) {
+        background-size: contain;
+        background-position: center center;
+    }
+    @media screen and (max-width: 575px) {
+        background-image: none;
+    }
     .content {
 
         .title {
@@ -17,16 +23,24 @@
                 font-size: 14px;
                 color: $text-color_3;
                 line-height: 1.5;
+                @media screen and (max-width: 575px) {
+                    font-size: 10px;
+                    text-align: left;
+                }
             }
 
             &__tlt {
                 margin-bottom: 59px;
-
                 &>* {
                     color: $text-color_1;
                     font-size: 44px;
                     font-weight: 700;
                     line-height: 1.34;
+                    @media screen and (max-width: 575px) {
+                        font-size: 26px;
+                        line-height: 1.8;
+                        text-align: left;
+                    }
                 }
             }
         }
@@ -45,7 +59,14 @@
 
 .company {
     padding: 46px 0 90px;
-
+    @media screen and (max-width: 760px) {
+        padding: 10px 0;
+    }
+    .no-pd {
+        @media screen and (max-width: 760px) {
+            padding: 0;
+        } 
+    }
     .title-cmp {
         margin-bottom: 10px;
 
@@ -54,9 +75,24 @@
             font-size: 20px;
             font-weight: 600;
             line-height: 1.7;
+            @media screen and (max-width: 991px) {
+                text-align: center;
+            }
         }
     }
-
+    .owl-carousel {
+        @media screen and (min-width: 761px) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        @media screen and (min-width: 991px) {
+            justify-content: space-between;
+        }
+    }
+    #owl-one img {
+        width: auto;
+    }
     &-b {
         width: 170px;
         height: 90px;
@@ -66,12 +102,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 15px;
+        margin-right: 10px;
     }
 }
 
 .section-second {
     padding: 90px 0 119px;
-
+    @media screen and (max-width: 576px) {
+        padding: 20px 0;
+    }
     .scd {
         &__text {
             font-weight: 500;
@@ -79,9 +119,33 @@
             font-size: 16px;
             margin-bottom: 25px;
             color: $text-color_2;
+            @media screen and (max-width: 575px) {
+                text-align: center;
+                font-size: 14px;
+            }
         }
 
-        &__list {}
+        &__image {
+
+            @media screen and (max-width: 991px) {
+                display: flex;
+                justify-content: center;
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__list {
+
+            @media screen and (max-width: 991px) {
+                margin-bottom: 15px;
+            }
+            @media screen and (max-width: 575px) {
+                display: none;
+            }
+        }
 
         &__items {
             font-weight: 500;
@@ -100,19 +164,16 @@
 .section-third {
     color: $text-color_1;
     padding: 85px 0 65px;
-
+    @media screen and (max-width: 576px) {
+        padding: 20px 0;
+    }
     .tid {
         .col:nth-child(-n+3) {
             @media screen and (min-width: 575px) {
                 margin-bottom: 50px;
             }
+        }
 
-        }
-        .title {
-            @media screen and (max-width: 575px) {
-                text-align: center;
-            }
-        }
         &__block {
             @media screen and (max-width: 575px) {
                 display: flex;
@@ -120,9 +181,10 @@
                 align-items: center;
                 flex-direction: column;
                 padding: 0 12px;
+                text-align: center;
             }
 
-            &:not(:last-child) {
+            & {
                 @media screen and (max-width: 575px) {
                     margin-bottom: 15px;
                 }
@@ -154,7 +216,9 @@
 .section-fouth {
     color: $text-color_1;
     padding: 65px 0 91px;
-
+    @media screen and (max-width: 576px) {
+        padding: 30px 0;
+    }
     .fuh {
         .row:nth-child(1) {
             margin-bottom: 75px;
@@ -216,7 +280,9 @@
             @media screen and (max-width: 991px) {
                 margin-bottom: 20px;
             }
-
+            @media screen and (max-width: 575px) {
+                font-size: 14px;    
+            }
             @media screen and (max-width: 540px) {
                 text-align: center;
             }
