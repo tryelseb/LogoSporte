@@ -57,7 +57,7 @@
             }
 
             .btn-cre {
-                @include ct-button(141px, transparent, $text-color_1);
+                @include ct-button(141px, $white-color, $text-color_1);
             }
         }
     }
@@ -102,11 +102,17 @@
             justify-content: space-between;
         }
     }
-
+//Owl carusel
     #owl-one img {
         width: auto;
     }
-
+    .center {
+        .company-b{
+            transform: scale(1);
+            box-shadow: 1px 5px 10px $main-color;
+        }
+    }
+    
     &-b {
         width: 170px;
         height: 90px;
@@ -118,9 +124,10 @@
         justify-content: center;
         margin-bottom: 15px;
         margin-right: 10px;
+        transform: scale(0.9);
     }
 }
-
+//-------------------
 .section-second {
     padding: 90px 0 119px;
 
@@ -205,9 +212,18 @@
             }
 
             & {
+                cursor: pointer;
                 @media screen and (max-width: 575px) {
                     margin-bottom: 15px;
                 }
+                &:nth-child(n-3){
+                    @media screen and (min-width: 575px) {
+                        margin-bottom: 15px;
+                    }
+                }
+                &:hover .block__img {
+                    transform: scale(1.1);
+                } 
             }
 
             .block__img {
@@ -662,8 +678,11 @@
 // POPAP
 .login {
     position: relative;
-    max-width: 345px;
     box-shadow: 0px 0px 4px 0 $border-color;
+    width: 345px;
+    @media screen and (max-width: 350px) {
+        width: 310px;
+    }
     &::before {
         content: '';
         position: absolute;
@@ -672,6 +691,9 @@
         border: 20px solid transparent;
         transform: rotate(45deg) translateX(15px) translateY(15px);
         box-shadow: -2px -2px 2px 0 $border-color;
+        @media screen and (max-width: 500px) {
+            right: 43%;
+        }
     }
 }
 
@@ -683,9 +705,10 @@
     margin-top: 15px;
     position: relative;
     z-index: 1;
-
-
-
+    @media screen and (max-width: 400px) {
+        padding: 30px 10px;
+    }
+    
     [class^="col-"]:not(:last-child) {
         margin-bottom: 10px;
     }

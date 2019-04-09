@@ -12,7 +12,26 @@
             justify-content: space-between;
         }
     }
-
+    // login pop-up main page
+    .wrp-btn {
+        position: relative;
+        .wrp-popup {
+            position: absolute;
+            top: 47px;
+            right: 3px;
+            opacity: 0;
+            transition-duration: .5s;
+            z-index: 9999; 
+            @media screen and (max-width: 500px){
+                right: -100px;
+            }
+            &.activ {
+                opacity: 1;
+                transition-duration: .5s;
+            }
+        }
+    }
+    // -------------------------
     .logo {
         text-align: left;
         & a {
@@ -52,14 +71,14 @@
     }
 
     .btn-lg {
-        @include header-button(transparent);
-        padding: 11px 18px;
+        @include header-button($white-color);
+        padding: 11px 16px;
     }
 
     .btn-sg {
         @include header-button($main-color);
         color: $white-color;
-        padding: 11px 18px;
+        padding: 11px 16px;
     }
 
     // Header construct page
@@ -92,8 +111,6 @@
             font-weight: 600;
             line-height: 1.5;
             color: $main-color;
-
-            &::after {}
         }
 
         .fa-envelope {

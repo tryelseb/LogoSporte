@@ -7,10 +7,18 @@
     border-radius: 6px;
     border: 1px solid $border-color;
     background-color: $bg-color;
+    &:hover {
+        background-color: darken($bg-color, 15%);
+    }
+    @media screen and (max-width: 1200px) {
+        width: 90px;
+    }
+
     @media screen and (max-width: 575px) {
         font-size: 12px;
     }
 }
+
 @mixin ct-button($width, $bg-color, $color) {
     width: $width;
     padding: 10px 23px;
@@ -21,10 +29,14 @@
     border: 1px solid $border-color;
     color: $color;
     border-radius: 6px;
+    &:hover {
+        background-color: darken($bg-color, 15%);
+    }
     @media screen and (max-width: 575px) {
         font-size: 12px;
     }
 }
+
 @mixin rgsin-button($bg-color) {
     display: block;
     width: 100%;
@@ -37,16 +49,20 @@
     border-radius: 6px;
     position: relative;
     max-height: 42px;
+    &:hover {
+        background-color: darken($bg-color, 15%);
+    }
     @media screen and (max-width: 575px) {
         font-size: 12px;
     }
-        &::before {
-            content: '';
-            position: absolute;
-            width: 42px;
-            height: 100%;
-            left: 0;
-            bottom: 0;
-            border-right: 1px solid $border-color;
-        }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 42px;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-right: 1px solid $border-color;
+    }
 }
