@@ -302,6 +302,10 @@
     font-weight: 500;
     line-height: 1.4;
     margin-right: 15px;
+    @media screen and (max-width: 575px) {
+        font-size: 10px;
+        margin-right: 10px;
+    }
 }
 
 .registration {
@@ -354,7 +358,9 @@
                 border-radius: 6px;
                 color: $text-color_2;
                 margin-bottom: 10px;
-
+                @media screen and (max-width: 575px) {
+                    font-size: 12px;  
+                 }
                 &.activ {
                     border-color: $main-color;
                     color: $main-color;
@@ -380,8 +386,11 @@
                     color: $text-color_2;
                     font-size: 26px;
                     font-weight: 700;
-                    line-height: 1.8;
+                    line-height: 1.5;
                     text-align: center;
+                    @media screen and (max-width: 450px) {
+                       font-size: 22px;  
+                    }
                 }
             }
 
@@ -407,6 +416,9 @@
                 line-height: 1.7;
                 font-weight: 500;
                 text-align: center;
+                @media screen and (max-width: 575px) {
+                    font-size: 14px;  
+                 }
             }
 
             .input-text,
@@ -416,7 +428,9 @@
                 font-size: 12px;
                 font-weight: 500;
                 margin-bottom: 4px;
-
+                @media screen and (max-width: 575px) {
+                    font-size: 10px;
+                }
                 &__sm {
                     text-align: right;
                 }
@@ -434,6 +448,9 @@
                 max-height: 42px;
                 border: 1px solid $border-color;
                 width: 100%;
+                @media screen and (max-width: 575px) {
+                    font-size: 12px;
+                }
             }
 
             .btn-start {

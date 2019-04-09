@@ -7,26 +7,39 @@
     border-radius: 6px;
     border: 1px solid $border-color;
     background-color: $bg-color;
+    @media screen and (max-width: 575px) {
+        font-size: 12px;
+    }
 }
 @mixin ct-button($width, $bg-color, $color) {
     width: $width;
     padding: 10px 23px;
     background-color: $bg-color;
+    font-size: 14px;
     font-weight: 600;
+    line-height: 1.4;
     border: 1px solid $border-color;
     color: $color;
     border-radius: 6px;
+    @media screen and (max-width: 575px) {
+        font-size: 12px;
+    }
 }
 @mixin rgsin-button($bg-color) {
     display: block;
     width: 100%;
     background-color: $bg-color;
     padding: 12px 0 12px 58px;
+    font-size: 14px;
     font-weight: 500;
+    line-height: 1.4;
     color: $white-color;
     border-radius: 6px;
     position: relative;
     max-height: 42px;
+    @media screen and (max-width: 575px) {
+        font-size: 12px;
+    }
         &::before {
             content: '';
             position: absolute;
