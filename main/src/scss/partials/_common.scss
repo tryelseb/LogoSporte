@@ -101,3 +101,10 @@ i {
     padding-top: 5px;
     display: none;
 }
+a:hover {
+    text-decoration: none;
+}
+input:focus {
+    border: 1px solid $main-color !important;
+    outline: none;
+}
