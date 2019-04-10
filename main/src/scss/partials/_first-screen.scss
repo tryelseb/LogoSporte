@@ -567,9 +567,68 @@
         border-bottom: 1px solid #f7f7f7;
     }
 
+    .wrp-mob-step {
+        margin-bottom: 20px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 575px) {
+            display: flex;
+        }
+        .mob-step {
+            max-height: 34px;
+            line-height: 1;
+            padding: 9px 74px;
+            border: 1px solid $border-color;
+            color: $white-color;
+            display: none;
+            &.activ {
+                background-color: $main-color;
+                display: block;
+            }
+            span {
+                font-size: 12px;
+                font-weight: 500;        
+            }
+        }
+
+        .nav {
+            padding: 0;
+            width: 45px;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border: 1px solid $border-color;
+            outline: none;
+            &:hover {
+                .fas {
+                    color: $main-color;
+                }
+            }
+            &:first-child {
+                border-radius: 6px 0 0 6px;
+            }
+
+            &:last-child {
+                border-radius: 0 6px 6px 0;
+            }
+
+            .fas {
+                color: $border-color;
+            }
+        }
+    }
+
     .wrp-step {
-        display: flex;
+        display: none;
+        flex-wrap: wrap;
         margin-bottom: 50px;
+
+        @media screen and (min-width: 576px) {
+            display: flex;
+        }
 
         .step {
             width: calc(100% / 6);
@@ -577,9 +636,31 @@
             padding: 12px 0 12px 21px;
             border: 1px solid $border-color;
 
+            @media screen and (max-width: 767px) {
+                width: calc(100% / 3);
+            }
+
             &.activ {
                 background-color: $main-color;
                 color: $white-color;
+            }
+
+            &:nth-child(n-3) {
+                @media screen and (max-width: 767px) {
+                    margin-bottom: 10px;
+                }
+            }
+
+            &:nth-child(3) {
+                @media screen and (max-width: 767px) {
+                    border-radius: 0 6px 6px 0;
+                }
+            }
+
+            &:nth-child(4) {
+                @media screen and (max-width: 767px) {
+                    border-radius: 6px 0 0 6px;
+                }
             }
 
             &:first-child {
