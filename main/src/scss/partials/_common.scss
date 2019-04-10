@@ -6,7 +6,9 @@ body {
     font-size: 14px;
     font-family: $main-font;
 }
-
+.fa-angle-double-up {
+    font-size: 12px !important;
+}
 @font-face {
     font-family: 'Myfont';
     src: url('../fonts/myfont.eot');

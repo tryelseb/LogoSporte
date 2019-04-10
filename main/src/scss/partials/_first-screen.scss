@@ -1,9 +1,9 @@
 .section-first {
     padding: 101px 0 70px;
-    background-image: url('../images/f1.png');
+    background-image: url('../images/first-bg.jpg');
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: right 109px;
+    background-size: contain;
+    background-position: 100% 50%;
 
     @media screen and (max-width: 765px) {
         background-size: contain;
@@ -136,12 +136,20 @@
 
 //-------------------
 .section-second {
-    padding: 90px 0 119px;
+    padding: 60px 0 40px;
 
     @media screen and (max-width: 576px) {
         padding: 20px 0;
     }
-
+    .my-d-flex {
+        @media screen and (min-width: 992px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            border: none;
+        }
+    }
     .scd {
         &__text {
             font-weight: 500;
@@ -161,36 +169,24 @@
             border: 1px solid $border-color;
             border-radius: 6px;
             background-color: $white-color;
-            min-height: 263px;
-            position: relative;
-
             @media screen and (max-width: 991px) {
                 display: flex;
+                align-items: center;
                 justify-content: center;
                 border: none;
             }
-
             img {
                 max-width: 100%;
-                min-height: 264px;
                 cursor: pointer;
                 transition-duration: .5s;
-
+                max-height: 560px;
+            @media screen and (max-width: 991px) {
+                max-width: 40%;
+            }
                 &:hover {
-                    transform: scale(1.1)
+                    transform: scale(1.1);
                 }
-
-                @media screen and (min-width: 992px) {
-                    top: -2px;
-                    left: 13px;
-                    position: absolute;
-                }
-
-                @media screen and (min-width: 1200px) {
-                    left: 15px;
-                }
-
-
+                
             }
         }
 
@@ -294,16 +290,8 @@
     }
 
     .fuh {
-        .row:nth-child(1) {
-            margin-bottom: 75px;
-        }
-
-        .row:nth-child(2) {
-            margin-bottom: 165px;
-        }
-
-        .row:nth-child(3) {
-            margin-bottom: 98px;
+        .row {
+            margin-bottom: 80px;
         }
 
         .row {
@@ -437,7 +425,7 @@
                 text-align: center;
                 font-weight: 600;
                 font-size: 14px;
-                line-height: 1.5;
+                line-height: 1;
                 padding: 12px 0;
                 max-height: 42px;
                 border: 1px solid $border-color;

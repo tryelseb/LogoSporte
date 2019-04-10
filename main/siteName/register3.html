@@ -65,15 +65,15 @@
 									</div>
 									<div class="col-lg-12 col-md-12 col-sm-12">
 										<span class="input-text">Behance</span>
-										<input type="text" name="behance" placeholder="www.behance.net/akalikbergenov">
+										<input type="text" name="behance" placeholder="">
 									</div>
 									<div class="col-lg-12 col-md-12 col-sm-12">
 										<span class="input-text">Dribbble</span>
-										<input type="text" name="dribbble" placeholder="www.dribbble.com/akalikbergenov">
+										<input type="text" name="dribbble" placeholder="">
 									</div>
 									<div class="col-lg-12 col-md-12 col-sm-12">
 										<span class="input-text">Other</span>
-										<input type="text" name="other" placeholder="www.fl.ru/users/akalikbergenov/">
+										<input type="text" name="other" placeholder="">
 									</div>
 									<div class="col-lg-12 col-md-12 col-sm-12">
 										<a href="#" class="input-text input-text__sm">+add one</a>
@@ -192,11 +192,32 @@
 									<a href="mailto:mail@logosporte.com" class="link-email">mail@logosporte.com</a>
 								</div>
 								<div class="wrp-selected">
-									<i class="fas fa-chevron-down"></i>
-									<select name="language[]" id="lang" class="ft-select">
-										<option value="English">English</option>
-										<option value="Russian">Russian</option>
-									</select>
+									<div class="select-box">
+										<div class="select-box__current" tabindex="1">
+											<div class="select-box__value">
+												<input class="select-box__input" type="radio" id="0" value="1" name="Ben"
+													checked="checked" />
+												<p class="select-box__input-text">English</p>
+											</div>
+											<div class="select-box__value">
+												<input class="select-box__input" type="radio" id="1" value="2" name="Ben"
+													checked="checked" />
+												<p class="select-box__input-text">Russian</p>
+											</div><img class="select-box__icon"
+												src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon"
+												aria-hidden="true" />
+										</div>
+										<ul class="select-box__list">
+											<li>
+												<label class="select-box__option" for="0"
+													aria-hidden="aria-hidden">English</label>
+											</li>
+											<li>
+												<label class="select-box__option" for="1"
+													aria-hidden="aria-hidden">Russian</label>
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>

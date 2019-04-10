@@ -3,7 +3,7 @@
     background-color: #f4fcff;
 
     .container .row {
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
 
     .my-d-flex {
@@ -132,30 +132,105 @@
     }
 
     .wrp-selected {
-        position: relative;
+        .select-box {
+            position: relative;
+            display: block;
+            font-size: 14px;
+            color: #6a6a6a;
+            width: 109px;
+            background-color: transparent;
+            border: 1px solid $border-color;
+            border-radius: 6px;
 
+            &__current {
+                position: relative;
+                box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+                cursor: pointer;
+                outline: none;
 
-        .fa-chevron-down {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            right: 18px;
-            font-size: 11px;
-            color: $text-color_3;
-            pointer-events: none;
+                &:focus {
+                    &+.select-box__list {
+                        opacity: 1;
+                        animation-name: none;
+
+                        .select-box__option {
+                            cursor: pointer;
+                        }
+                    }
+
+                    .select-box__icon {
+                        transform: translateY(-50%) rotate(180deg);
+                    }
+                }
+            }
+
+            &__icon {
+                position: absolute;
+                top: 50%;
+                right: 11px;
+                transform: translateY(-50%);
+                width: 14px;
+                opacity: 0.3;
+                transition: 0.2s ease;
+            }
+
+            &__value {
+                display: flex;
+            }
+
+            &__input {
+                display: none;
+
+                &:checked+.select-box__input-text {
+                    display: block;
+                }
+            }
+
+            &__input-text {
+                display: none;
+                width: 100%;
+                line-height: 1;
+                padding: 14px 0 14px 15px;
+                margin-right: 0;
+                background-color: transparent;
+            }
+
+            &__list {
+                position: absolute;
+                width: 100%;
+                padding: 0;
+                list-style: none;
+                opacity: 0;
+                animation-name: HideList;
+                animation-duration: 0.5s;
+                animation-delay: 0.5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: step-start;
+                box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+            }
+
+            &__option {
+                display: block;
+                padding: 5px 0 5px 15px;
+                background-color: transparent;
+                border: 1px solid $border-color;
+                border-radius: 6px;
+                margin: .5px;
+                &:hover,
+                &:focus {
+                    color: $white-color;
+                    background-color: $main-color;
+                }
+            }
         }
 
-        .ft-select {
-            background-color: transparent;
-            width: 109px;
-            border: 1px solid $border-color;
-            padding: 12px;
-            border-radius: 6px;
-            appearance: none;
+        @keyframes HideList {
+            from {
+                transform: scaleY(1);
+            }
 
-            &:focus {
-                outline: none;
-                box-shadow: none;
+            to {
+                transform: scaleY(0);
             }
         }
     }
