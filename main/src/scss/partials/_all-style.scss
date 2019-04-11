@@ -347,7 +347,7 @@
             img {
                 cursor: pointer;
                 transition-duration: .5s;
-
+                max-height: 297px;
                 &:hover {
                     transform: scale(1.05);
                 }
