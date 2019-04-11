@@ -169,24 +169,36 @@
             border: 1px solid $border-color;
             border-radius: 6px;
             background-color: $white-color;
+            min-height: 263px;
+            position: relative;
+
             @media screen and (max-width: 991px) {
                 display: flex;
-                align-items: center;
                 justify-content: center;
                 border: none;
             }
+
             img {
                 max-width: 100%;
+                min-height: 264px;
                 cursor: pointer;
                 transition-duration: .5s;
-                max-height: 560px;
-            @media screen and (max-width: 991px) {
-                max-width: 40%;
-            }
+
                 &:hover {
-                    transform: scale(1.1);
+                    transform: scale(1.1)
                 }
-                
+
+                @media screen and (min-width: 992px) {
+                    top: -2px;
+                    left: 13px;
+                    position: absolute;
+                }
+
+                @media screen and (min-width: 1200px) {
+                    left: 15px;
+                }
+
+
             }
         }
 
