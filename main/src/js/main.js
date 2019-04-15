@@ -126,9 +126,9 @@ $(document).ready(function () {
   $(".btn-lg").click(function () {
     $(".wrp-popup").toggleClass('activ');
   });
-
-
-
+  $(".wrp-block--like").click(function () {
+    $(this).toggleClass('activ')
+  });
   $(window).on('load resize', windowSize);
 });
 // list 

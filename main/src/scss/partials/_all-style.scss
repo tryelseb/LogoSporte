@@ -934,7 +934,7 @@
 // CONSTRUCTOR2
 
 .wrp-block {
-    transition: all 1s;
+    transition: all .5s;
     height: 170px;
     border-radius: 6px;
     border: 1px solid $border-color;
@@ -944,8 +944,24 @@
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
-    margin-bottom: 60px;
-
+    margin-bottom: 30px;
+    &--like {
+        &.activ {
+            border-color: $main-color;
+            position: relative;
+            &:after {
+                content: '\f058';
+                position: absolute;
+                font-family: "Font Awesome 5 Free";
+                right: -11px;
+                top: -15px;
+                line-height: 1;
+                color: $main-color;
+                font-size: 28px;
+                background-color: #fff;
+            }
+        }
+    }
     &:hover {
         border: 1px solid $main-color;
     }
@@ -1014,6 +1030,7 @@
 
     .color-text {
         padding: 10px 0 10px 20px;
+        border: none;
         border-right: 1px solid $border-color;
     }
 
