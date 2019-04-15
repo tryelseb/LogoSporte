@@ -67,8 +67,34 @@ $(document).ready(function () {
         }
       }
     });
-    if ($(window).width() <= '991'){
+    if ($(window).width() <= '991') {
       $('#owl-two').owlCarousel({
+        items: 3,
+        dots: false,
+        lazyLoad: true,
+        autoplay: false,
+        responsive: {
+          0: {
+            items: 1,
+            center: true,
+            loop: true,
+            autoWidth: true
+          },
+          784: {
+            items: 2,
+            center: true,
+            loop: true,
+            autoWidth: true
+          },
+          1000: {
+            items: 6,
+            center: true,
+            loop: true,
+            autoWidth: true
+          }
+        }
+      });
+      $('#owl-design').owlCarousel({
         items: 3,
         dots: false,
         lazyLoad: true,
@@ -101,7 +127,42 @@ $(document).ready(function () {
     $(".wrp-popup").toggleClass('activ');
   });
 
-  
+
 
   $(window).on('load resize', windowSize);
 });
+// list 
+function test() {
+  var ele = document.getElementsByClassName('r1');
+  for (var i = 0; i < ele.length; i++) {
+    console.log(i);
+    function fun1(i) {
+      console.log(i);
+      var rng = document.getElementsByClassName('r1')[i];
+      var div = document.getElementsByClassName('color')[i];
+      var output = document.getElementsByClassName('i1')[i];
+      var output_mob = document.getElementsByClassName('i2')[i];
+      output.value = rng.value + '%';
+      output_mob.value = rng.value + '%';
+      div.style.width = rng.value + '%';
+      if (rng.value == 0) {
+        return output.style.left = 0.5 + '%';
+      } else if (rng.value > 97) {
+        return output.style.left = 97 + '%';
+      }
+      output.style.left = rng.value + '%';
+    }
+    fun1(i);
+  }
+}
+
+function load() {
+  var rng = document.getElementById('r1');
+  var div = document.getElementById('color');
+  div.style.width = rng.value + '%';
+}
+load();
+
+
+
+

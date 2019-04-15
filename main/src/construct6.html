@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>LogoSporte</title>
+	<link data-csp="header-favicon" rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	//= template/header_const.html
+	<section class="constructor">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="title">
+						<h1>Сonstruct the project</h1>
+					</div>
+					<div class="wrp-step">
+						<div class="step activ"><span class="step-text">1. Price</span></div>
+						<div class="step activ"><span class="step-text">2. Type</span></div>
+						<div class="step activ"><span class="step-text">3. Color</span></div>
+						<div class="step activ"><span class="step-text">4. Style</span></div>
+						<div class="step activ"><span class="step-text">5. Brief</span></div>
+						<div class="step activ"><span class="step-text">6. Condition</span></div>
+					</div>
+					<div class="wrp-mob-step">
+						<button class="nav left">
+							<i class="fas fa-chevron-left"></i>
+						</button>
+						<div class="mob-step"><span>1/6 Price</span></div>
+						<div class="mob-step"><span>2/6 Type</span></div>
+						<div class="mob-step"><span>3/6 Color</span></div>
+						<div class="mob-step"><span>4/6 Style</span></div>
+						<div class="mob-step"><span>5/6 Brief</span></div>
+						<div class="mob-step activ"><span>6/6 Condition</span></div>
+						<button class="nav right">
+							<i class="fas fa-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+				<div class="col-12">
+					<span class="cnst-subtitle">
+						Condition
+					</span>
+				</div>
+			</div>
+			<form action="#" class="row mb">
+				<div class="col-lg-4 col-md-12 col-sm-12">
+					<div class="wrp-brief">
+						<span class="title-brief">
+							How long will the contest take place
+						</span>
+						<div class="select-wrapper">
+							<i class="fas fa-angle-down"></i>
+							<select name="name_company" class="select-brief">
+								<option>10 day</option>
+								<option>10 day</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-12 col-sm-12">
+					<div class="wrp-brief">
+						<span class="title-brief">
+							What format in the contest
+						</span>
+						<div class="select-wrapper">
+							<i class="fas fa-angle-down"></i>
+							<select name="format" class="select-brief">
+								<option>Garanted</option>
+								<option>Garanted</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-12 col-sm-12">
+					<div class="wrp-brief">
+						<span class="title-brief">
+							When to start the project
+						</span>
+						<div class="select-wrapper">
+							<i class="fas fa-calendar-alt"></i>
+							<input type="date" name="start_project" class="input-brief" required value="2017-06-01">
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="row">
+				<div class="col-12">
+					<span class="cnst-subtitle">
+						Who takes part in the contest
+					</span>
+				</div>
+			</div>
+			<form action="#" class="row mb">
+				<div class="col-6 col-lg-2 col-md-6 col-sm-6">
+					<div class="wrp-brief">
+						<span class="title-brief">
+							Designers
+						</span>
+						<div class="select-wrapper">
+							<i class="fas fa-angle-down"></i>
+							<select name="name_designer" class="select-brief">
+								<option>Сhoose</option>
+								<option>Andy</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-lg-2 col-md-6 col-sm-6">
+					<div class="wrp-brief">
+						<span class="title-brief">
+							Works
+						</span>
+						<div class="select-wrapper">
+							<i class="fas fa-angle-down"></i>
+							<select name="name_works" class="select-brief">
+								<option>None</option>
+								<option>None</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-lg-2 col-md-6 col-sm-6">
+					<div class="wrp-brief">
+						<span class="title-brief">
+							Winner
+						</span>
+						<div class="select-wrapper">
+							<i class="fas fa-angle-down"></i>
+							<select name="name_winner" class="select-brief">
+								<option>None</option>
+								<option>None</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-lg-2 col-md-6 col-sm-6">
+					<div class="wrp-brief">
+						<span class="title-brief">
+							Liked
+						</span>
+						<div class="select-wrapper">
+							<i class="fas fa-angle-down"></i>
+							<select name="name_liked" class="select-brief">
+								<option>1 000</option>
+								<option>None</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="wrp-brief">
+						<span class="title-brief">
+							Search
+						</span>
+						<div class="select-wrapper">
+							<i class="fas fa-search"></i>
+							<input type="text" name="name_search" class="input-brief input-brief--search"
+								placeholder="">
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="row">
+				<div class="col-12 d-flex justify-content-end align-items-center">
+					<button class="brf-file">Skip payment</button>
+					<button class="cnstr-next">Next</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-fifth">
+		//= template/footer.html
+	</section>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+		</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+		</script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

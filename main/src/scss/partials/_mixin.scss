@@ -20,7 +20,7 @@
 }
 
 @mixin ct-button($width, $bg-color, $color) {
-    width: $width;
+    min-width: $width;
     padding: 10px 23px;
     background-color: $bg-color;
     font-size: 14px;
