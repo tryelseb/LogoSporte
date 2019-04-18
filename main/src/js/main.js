@@ -1,6 +1,7 @@
 //= ../../bower_components/jquery/dist/jquery.js
 //= partials/owl.carousel.min.js
 
+
 // // Menu
 $("#navToggle").click(function () {
 
@@ -15,6 +16,11 @@ $("#navToggle").click(function () {
     $('body').removeClass('locked');
     $(".fixed-menu-color").css("color", "");
   })
+});
+//chat
+$(".contact-name__opt:after").click(function () {
+
+  console.log("sadas");
 });
 // Go to top
 jQuery(document).ready(function ($) {
@@ -35,7 +41,6 @@ jQuery(document).ready(function ($) {
   });
   show_scrollTop();
 });
-
 // Slider
 
 $(document).ready(function () {
@@ -146,7 +151,7 @@ function test() {
       output_mob.value = rng.value + '%';
       div.style.width = rng.value + '%';
       if (rng.value == 0) {
-        return output.style.left = 0.5 + '%';
+        return output.style.left = 1 + '%';
       } else if (rng.value > 97) {
         return output.style.left = 97 + '%';
       }
@@ -163,6 +168,4 @@ function load() {
 }
 load();
 
-
-
-
+///tootip

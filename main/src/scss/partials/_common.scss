@@ -5,6 +5,8 @@ body {
     box-sizing: border-box;
     font-size: 14px;
     font-family: $main-font;
+    position: relative;
+    z-index: 1;
 }
 .fa-angle-double-up {
     font-size: 12px !important;
