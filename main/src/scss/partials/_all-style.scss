@@ -278,7 +278,11 @@
 
             .block__img {
                 margin-bottom: 20px;
-                transform: scale(1.1);
+                max-width: 120px;
+                height: 120px;
+                &--4 {
+                    max-width: 180px;
+                }
             }
 
             .block__title {
@@ -325,12 +329,7 @@
                 text-align: center;
             }
         }
-
-        &-img {
-            display: flex;
-            justify-content: center;
-        }
-
+        
         .row:nth-child(2) .fuh-img {
             justify-content: flex-end;
 
@@ -729,13 +728,16 @@
         line-height: 1.5;
         margin-bottom: 28px;
         display: block;
+
         span {
             font-size: 20px;
             color: #bbbbbb;
+
             @media screen and (max-width: 576px) {
                 font-size: 14px;
             }
         }
+
         @media screen and (max-width: 576px) {
             font-size: 18px;
             margin-bottom: 10px;
@@ -945,10 +947,12 @@
     flex-direction: column;
     cursor: pointer;
     margin-bottom: 30px;
+
     &--like {
         &.activ {
             border-color: $main-color;
             position: relative;
+
             &:after {
                 content: '\f058';
                 position: absolute;
@@ -962,6 +966,7 @@
             }
         }
     }
+
     &:hover {
         border: 1px solid $main-color;
     }
@@ -1270,6 +1275,7 @@
         appearance: none;
         outline: none;
         cursor: pointer;
+
         @media screen and (max-width: 575px) {
             font-size: 12px;
         }
@@ -1550,66 +1556,98 @@
 .message {
     padding: 100px 0;
 }
+
 .chat {
     display: flex;
+
     .chat-sidebar {
         width: 33%;
+
+        &.v-mob {
+            @media screen and (max-width: 765px) {
+                display: none;
+            }
+        }
+
         @media screen and (max-width: 765px) {
             width: 100%;
         }
     }
+
     .chat-all {
         width: 67%;
         height: 580px;
         border-style: solid;
         border-width: 1px 1px 1px 0;
         border-color: $border-color;
+
+        &.v-mob {
+            @media screen and (max-width: 765px) {
+                display: block;
+                width: 100%;
+                border-width: 1px;
+                border-radius: 6px;
+            }
+        }
+
         @media screen and (max-width: 765px) {
             display: none;
         }
-        .chat-sct{
+
+        .chat-sct {
             padding: 14px;
             height: 85%;
             border-bottom: 1px solid $border-color;
             overflow-y: scroll;
+
             .row-date {
                 width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin-bottom: 25px;
+
                 .chat-date {
-                   display: block;
-                   color: #bbbbbb;
-                   font-size: 14px;
-                   font-weight: 500;
-                   padding: 3px 10px;
-                   border: 1px solid $border-color;
-                   max-width: 100px;
-                   border-radius: 4px
+                    display: block;
+                    color: #bbbbbb;
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding: 3px 10px;
+                    border: 1px solid $border-color;
+                    max-width: 100px;
+                    border-radius: 4px
                 }
             }
+
             .row-you {
                 width: 100%;
                 position: relative;
                 margin-bottom: 25px;
-                .time{
+
+                .time {
                     position: absolute;
                     left: 45%;
                     font-size: 12px;
                     font-weight: 500;
                     color: #e6e6e6;
                 }
+
                 .contact {
                     width: 50%;
                     border: 1px solid $border-color;
                     border-radius: 6px;
                     justify-content: flex-start;
+
+                    @media screen and (max-width: 575px) {
+                        width: 100%;
+                    }
+
                     .avatar {
                         margin-right: 10px;
                     }
                 }
             }
+
             .row-answer {
                 width: 100%;
                 display: flex;
@@ -1617,6 +1655,33 @@
                 justify-content: flex-end;
                 margin-bottom: 25px;
                 position: relative;
+
+                .time {
+                    position: absolute;
+                    right: 0;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #e6e6e6;
+                    bottom: -17px;
+                }
+
+                //
+                .contact {
+                    width: 50%;
+                    border: 1px solid $border-color;
+                    border-radius: 6px;
+                    justify-content: flex-start;
+
+                    @media screen and (max-width: 575px) {
+                        width: 100%;
+                    }
+
+                    .avatar {
+                        margin-right: 10px;
+                    }
+                }
+
+                //
                 .date-time {
                     position: absolute;
                     bottom: -23px;
@@ -1625,14 +1690,22 @@
                     font-weight: 500;
                     color: #e6e6e6;
                 }
+
                 .block-text {
                     width: 50%;
+
+                    @media screen and (max-width: 575px) {
+                        width: 100%;
+                    }
+
                     img {
                         margin-bottom: 10px;
+
                         @media screen and (max-width: 991px) {
                             max-width: 210px;
                         }
                     }
+
                     p {
                         padding: 12px 15px;
                         border: 1px solid $border-color;
@@ -1642,6 +1715,7 @@
                         font-weight: 400;
                         line-height: 1.5;
                         color: #6a6a6a;
+
                         @media screen and (max-width: 1199px) {
                             font-size: 12px;
                         }
@@ -1649,56 +1723,147 @@
                 }
             }
         }
-        .chat-sbmt{
+
+        .chat-sbmt {
             height: 15%;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 24px;
+            align-items: flex-start;
+            padding: 15px 24px 10px 24px;
             background-color: #fbfbfb;
-            .attach{
+            justify-content: flex-start;
+            flex-direction: column;
+
+            @media screen and (min-width: 576px) {
+                justify-content: space-between;
+                flex-direction: column;
+            }
+
+            .form-messege {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5px;
+                @media screen and (min-width: 576px) {
+                    justify-content: space-between;
+                }
+            }
+            .file-attach {
+                .list-a {
+                    display: flex;
+                    @media screen and (max-width: 450px){
+                        flex-direction: column;
+                        position: absolute;
+                        bottom: -80px;
+                    }
+                    .items-a {
+                        padding: 1px 25px 2px 10px;
+                        border: 1px solid $border-color;
+                        line-height: 1;
+                        border-radius: 6px;
+                        margin-right: 5px;
+                        position: relative;
+                        @media screen and (max-width: 450px){
+                            margin-bottom: 5px;
+                        }
+                        
+                        &:after {
+                            position: absolute;
+                            content: '\f057';
+                            font-family: "Font Awesome 5 Free";
+                            font-size: 10px;
+                            color: $text-color_3;
+                            right: 5px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            cursor: pointer;
+                        }
+                        a {
+                            font-size: 12px;
+                            color: $text-color_3;
+                            line-height: 1;
+                            &:hover {
+                                color: $main-color;
+                            }
+                        }
+                    }
+                }
+            }
+            .attach {
                 width: 42px;
                 height: 42px;
                 display: flex;
                 align-items: center;
-                justify-content: center;
                 border: 1px solid $border-color;
                 border-radius: 50%;
                 background-color: #fff;
                 margin-right: 10px;
+                justify-content: center;
                 cursor: pointer;
+
                 i {
                     font-size: 18px;
                     color: $text-color_3;
                 }
             }
+
             .input-chat {
                 width: 75%;
                 padding: 9.5px 12px;
                 border: 1px solid $border-color;
-                border-radius: 6px;
-                margin-right: 10px;
+                border-radius: 6px 0 0 6px;
                 height: 42px;
                 outline: none;
                 resize: none;
+
+                @media screen and (min-width: 576px) {
+                    margin-right: 10px;
+                    border-radius: 6px;
+                }
+
                 @media screen and (max-width: 1199px) {
                     font-size: 12px;
                 }
             }
+
             .btn-chat {
                 @include ct-button(110px, $main-color, $white-color);
+
+                @media screen and (max-width: 575px) {
+                    color: transparent;
+                    min-width: 42px;
+                    height: 42px;
+                    padding: 0;
+                    border-radius: 0 6px 6px 0;
+                    background-color: #fff;
+                    position: relative;
+
+                    &:after {
+                        content: '\f1d8';
+                        font-family: "Font Awesome 5 Free";
+                        font-size: 18px;
+                        color: $main-color;
+                        text-align: center;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-57%, -50%);
+                    }
+                }
             }
         }
     }
 }
+
 .message {
     .title-tabs {
         display: flex;
         align-items: center;
         justify-content: flex-end;
+
         @media screen and (max-width: 765px) {
             flex-direction: column;
         }
+
         .tab {
             min-width: 193px;
             height: 42px;
@@ -1707,34 +1872,43 @@
             display: flex;
             align-items: center;
             cursor: pointer;
+
             &:hover {
                 border: 1px solid $main-color;
+
                 .tab-text {
                     color: $main-color;
                 }
             }
+
             &.activ {
                 border-color: $main-color;
+
                 .tab-text {
                     color: $main-color;
                 }
             }
+
             &:first-child {
                 border-radius: 6px 0 0 0;
             }
+
             &:last-child {
                 border-radius: 0 6px 0 0;
             }
+
             &-text {
                 line-height: 1;
                 font-size: 14px;
                 font-weight: 600;
                 color: $text-color_3;
+
                 @media screen and (max-width: 765px) {
                     width: 100%;
                     text-align: center;
                 }
             }
+
             @media screen and (max-width: 765px) {
                 width: 100%;
                 text-align: center;
@@ -1743,6 +1917,7 @@
             }
         }
     }
+
     .chat-message {
         background-color: transparent;
         height: 580px;
@@ -1751,24 +1926,28 @@
         border: 1px solid $border-color;
         overflow-y: scroll;
         position: relative;
+
         @media screen and (max-width: 765px) {
             border-radius: 6px;
         }
+
         .wrp-brief {
             margin: 0;
             position: sticky;
             width: 100%;
             top: 0;
             z-index: 9;
+
             .input-brief {
                 border: none;
                 border-radius: 6px 0 0 0;
                 border-bottom: 1px solid $border-color;
                 padding: 8px 0 8px 35px;
             }
-        }     
+        }
     }
 }
+
 .contact {
     padding: 15px;
     display: flex;
@@ -1779,27 +1958,66 @@
     position: relative;
     z-index: 1;
     cursor: pointer;
+
+    &.activ {
+        background-color: $main-color;
+
+        .contact-name,
+        .contact-message,
+        .contact-name:after,
+        .contact-date {
+            color: $white-color;
+        }
+    }
+
     @media screen and (max-width: 765px) {
         justify-content: flex-start;
     }
+
     .avatar {
         border-radius: 50%;
+
         @media screen and (max-width: 1199px) {
             margin-right: 10px;
         }
     }
 
     &-text {
-        font-family: Montserrat;
         font-size: 14px;
-        @media screen and (max-width: 1199px){
+
+        @media screen and (max-width: 1199px) {
             font-size: 12px;
         }
+
         .contact-name {
             color: $text-color_2;
             font-weight: 600;
             display: block;
             line-height: 1.2;
+            padding-right: 13px;
+            position: relative;
+
+            .time-reply {
+                font-size: 12px;
+                color: $text-color_3;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                line-height: 1;
+            }
+
+            &__opt {
+                &:after {
+                    content: '\f005';
+                    position: absolute;
+                    font-family: "Font Awesome 5 Free";
+                    font-size: 11px;
+                    right: 0;
+                    top: 0;
+                    color: #bbbbbb;
+                }
+            }
         }
 
         .contact-message {
@@ -1816,10 +2034,12 @@
         line-height: 1;
         color: $text-color_3;
         padding-bottom: 23px;
+
         @media screen and (max-width: 1199px) {
             font-size: 10px;
         }
-        @media screen and (max-width: 991px){
+
+        @media screen and (max-width: 991px) {
             position: absolute;
             top: 4px;
             right: 4px;
@@ -1827,6 +2047,35 @@
     }
 }
 
+#reply {
+    width: 50%;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    padding-bottom: 5px;
+
+    @media screen and (max-width: 991px) {
+        width: 100%;
+    }
+
+    .contact {
+        width: 100%;
+        border: none;
+
+        &:nth-child(2) {
+            width: 80%;
+            margin-left: auto;
+            border-left: 2px solid $main-color;
+            border-radius: 0;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            min-height: 60px;
+
+            @media screen and (max-width: 500px) {
+                width: 90%;
+            }
+        }
+    }
+}
 
 
 
