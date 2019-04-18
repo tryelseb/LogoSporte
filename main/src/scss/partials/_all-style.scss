@@ -238,6 +238,7 @@
     }
 
     .tid {
+        transition: all 0.5s;
         .col:nth-child(-n+3) {
             @media screen and (min-width: 575px) {
                 margin-bottom: 50px;
@@ -280,6 +281,7 @@
                 margin-bottom: 20px;
                 max-width: 120px;
                 height: 120px;
+                transition: all 0.5s;
                 &--4 {
                     max-width: 180px;
                 }
@@ -346,7 +348,7 @@
             img {
                 cursor: pointer;
                 transition-duration: .5s;
-                max-height: 297px;
+                max-height: 380px;
 
                 &:hover {
                     transform: scale(1.05);
@@ -765,6 +767,21 @@
         position: relative;
         margin-bottom: 30px;
 
+        &.activ {
+            border: 1px solid $main-color;
+            .btn-cnst {
+                background-color: $main-color;
+                color: $white-color;
+            }
+        }
+
+        cursor: pointer;
+        &:hover {
+            border: 1px solid $main-color;
+        }
+        &:hover {
+            border: 1px solid $main-color;
+        }
         @media screen and (max-width: 989px) {
             min-height: 600px;
         }
@@ -772,9 +789,18 @@
         @media screen and (max-width: 422px) {
             padding: 30px 15px;
         }
-
+        .wrp-img-c {
+            width: 165px;
+            height: 150px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
         .cstr__img {
-            width: auto;
+            width: 100%;
+            &-2 {
+                margin-right: 10px;
+            }
         }
 
         .cstr__title {
@@ -816,6 +842,10 @@
             transform: translateX(-50%);
             @include ct-button(182px, transparent, $text-color_1);
             height: 52px;
+            &:hover {
+                background-color: $main-color;
+                color: $white-color;
+            }
         }
     }
 
@@ -902,7 +932,10 @@
 
             .btn-price {
                 @include ct-button(105px, transparent, $text-color_1);
-
+                &:hover {
+                    background-color: $main-color;
+                    color: $white-color;
+                }
                 @media screen and (max-width: 780px) {
                     height: 42px;
                     position: absolute;
@@ -1177,7 +1210,6 @@
             margin-top: -12px;
             position: relative;
             z-index: 100;
-            position: relative;
             box-shadow: inset 0 0 0 8px white, inset 0 0 0 12px $main-color;
 
         }
@@ -1202,8 +1234,8 @@
         .i1,
         .i2 {
             border: none;
-            width: 30px;
-            text-align: center;
+            width: 48px;
+            text-align: left;
             font-size: 12px;
             display: block;
         }
@@ -1247,7 +1279,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 21px;
-
+    position: relative;
     .title-brief {
         display: block;
         font-size: 12px;
@@ -1264,6 +1296,7 @@
     .select-brief,
     .input-brief {
         font-size: 14px;
+        height: 47px;
         width: 100%;
         font-weight: 500;
         color: $text-color_2;
@@ -1275,6 +1308,7 @@
         appearance: none;
         outline: none;
         cursor: pointer;
+        resize:none;
 
         @media screen and (max-width: 575px) {
             font-size: 12px;
@@ -1321,17 +1355,62 @@
         }
     }
 
-    .qws {
-        position: relative;
-
-        &:after {
-            color: $text_color_3;
-            content: '\f059';
-            font-family: "Font Awesome 5 Free";
-            position: absolute;
-            top: -10px;
-            right: 10px;
-            cursor: pointer;
+    .my-tooltip {
+        color: $text_color_3;
+        font-size: 14px;
+        position: absolute;
+        top: -5px;
+        right: 12px;
+        cursor: pointer;
+        &:hover {
+            color: $main-color;
+            animation: tooltip .7s;
+        }
+        &:hover i:after {
+             opacity: 1;
+             visibility: visible;
+             transition: all .8s;
+             transition-delay: .8s;
+         }
+        i {
+            line-height: 1;
+            display: block;
+            position: relative;
+            &:after {
+                position: absolute;
+                content: attr(data-title);
+                top: 28px;
+                left: 50%;
+                width: 275px;
+                transform: translateX(-50%);
+                z-index: 10;
+                background-color: #fff;
+                min-height: 50px;
+                padding: 10px;
+                box-shadow: 0 2px 10px rgba(#000, .45);
+                border-radius: 10px;
+                line-height: 1.5;
+                font-size: 14px;
+                font-weight: 400;
+                color: #BBBBBB;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .1s;
+                @media screen and (max-width: 991px) {
+                    right: 0px;
+                    left: auto;
+                    top: 20px;
+                    transform: translateX(0%);
+                }
+            }
+        }
+        @keyframes tooltip {
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
         }
     }
 }
@@ -1554,7 +1633,7 @@
 ///
 // Message
 .message {
-    padding: 100px 0;
+    padding: 40px 0;
 }
 
 .chat {
@@ -1796,7 +1875,7 @@
                 border: 1px solid $border-color;
                 border-radius: 50%;
                 background-color: #fff;
-                margin-right: 10px;
+                margin-right: 8px;
                 justify-content: center;
                 cursor: pointer;
 

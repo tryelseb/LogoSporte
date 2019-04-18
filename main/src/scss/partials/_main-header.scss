@@ -83,13 +83,18 @@
 
     // Header construct page
     .wrp-const {
-        padding-left: 30px;
+        padding-left: 10px;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 210px;
-
+        width: 100%;
+        @media screen and (-width: 991px) {
+            padding: 0;
+        }
+        @media screen and (max-width: 575px) {
+            width: 250px;
+        }
         .info {
             display: flex;
 
