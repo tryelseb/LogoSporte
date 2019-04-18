@@ -238,6 +238,7 @@
     }
 
     .tid {
+        transition: all 0.5s;
         .col:nth-child(-n+3) {
             @media screen and (min-width: 575px) {
                 margin-bottom: 50px;
@@ -280,6 +281,7 @@
                 margin-bottom: 20px;
                 max-width: 120px;
                 height: 120px;
+                transition: all 0.5s;
                 &--4 {
                     max-width: 180px;
                 }
@@ -346,7 +348,7 @@
             img {
                 cursor: pointer;
                 transition-duration: .5s;
-                max-height: 297px;
+                max-height: 380px;
 
                 &:hover {
                     transform: scale(1.05);
@@ -765,6 +767,21 @@
         position: relative;
         margin-bottom: 30px;
 
+        &.activ {
+            border: 1px solid $main-color;
+            .btn-cnst {
+                background-color: $main-color;
+                color: $white-color;
+            }
+        }
+
+        cursor: pointer;
+        &:hover {
+            border: 1px solid $main-color;
+        }
+        &:hover {
+            border: 1px solid $main-color;
+        }
         @media screen and (max-width: 989px) {
             min-height: 600px;
         }
@@ -772,9 +789,18 @@
         @media screen and (max-width: 422px) {
             padding: 30px 15px;
         }
-
+        .wrp-img-c {
+            width: 165px;
+            height: 150px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
         .cstr__img {
-            width: auto;
+            width: 100%;
+            &-2 {
+                margin-right: 10px;
+            }
         }
 
         .cstr__title {
@@ -816,6 +842,10 @@
             transform: translateX(-50%);
             @include ct-button(182px, transparent, $text-color_1);
             height: 52px;
+            &:hover {
+                background-color: $main-color;
+                color: $white-color;
+            }
         }
     }
 
@@ -902,7 +932,10 @@
 
             .btn-price {
                 @include ct-button(105px, transparent, $text-color_1);
-
+                &:hover {
+                    background-color: $main-color;
+                    color: $white-color;
+                }
                 @media screen and (max-width: 780px) {
                     height: 42px;
                     position: absolute;
