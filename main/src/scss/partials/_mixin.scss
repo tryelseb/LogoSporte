@@ -66,3 +66,30 @@
         border-right: 1px solid $border-color;
     }
 }
+
+@mixin border {
+    border: 1px solid $border-color;
+    border-radius: $main-radius;
+}
+
+
+@mixin btn-110($bg-color) {
+    width: 110px;
+    padding: 11px 26px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    border-radius: 6px;
+    border: 1px solid $border-color;
+    background-color: $bg-color;
+    &:hover {
+        background-color: darken($bg-color, 15%);
+    }
+    @media screen and (max-width: 1200px) {
+        min-width: 90px;
+    }
+
+    @media screen and (max-width: 575px) {
+        font-size: 12px;
+    }
+}
