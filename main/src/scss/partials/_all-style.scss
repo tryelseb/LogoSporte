@@ -2306,7 +2306,7 @@
     }
 
     .row {
-        .prf-hack {
+        &.prf-hack {
             background-color: #fbfbfb;
             padding: 20px 11px;
             border-radius: 6px;
@@ -2408,7 +2408,35 @@
             }
         }
     }
-
+    .prf-add {
+        .prf-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            cursor: pointer;
+            &:hover {
+                border-color: $main-color;
+                .fa-arrow-down, .add{
+                    color: $main-color;
+                }
+            }
+        }
+        .fa-arrow-down {
+            color: $text-color_3;
+            font-size: 22px;
+        }
+        .add {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.7;
+            color: $text-color_3;
+            @media screen and (max-width: 575px){
+                font-size: 12px;
+            }
+        }
+    }
     .prf-block {
 
         /// winers //.
@@ -2443,11 +2471,18 @@
         }
 
         .prf-image {
-            min-height: 130px;
+            min-height: 180px;
             border: 1px solid $border-color;
             border-radius: 6px 6px 0 0;
+            position: relative;
             img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
                 width: 100%;
+                height: 100%;
             }
         }
 
@@ -2655,7 +2690,93 @@
             }
         }
     }
+    &--delected {
+       .text-moderators {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);    
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           width: 100%;
+           height: 100%;
+           background-color: rgba(#b58c40, .8);
+           font-size: 14px;
+           color: #fff;
+           font-weight: 500;
+           line-height: 1.7;
+           border-radius: 6px 6px 0 0;
+           @media screen and (max-width: 575px) {
+               font-size: 12px;
+           }
+       } 
+       .fa-heart{
+            color:#fa5120;
+       }
+    }
+    &--add {
+        .prf-block {
+            margin-bottom: 30px;
+        }
+    }
+    &--edit{
+        .prf-icon--edit {
+            border-radius: 0;
+            position: relative;
+        }
+        
+        .icon-edit {
+            position: absolute;
+            left: 55px;
+        }
+        .edit-block{
+            min-height: 182px;
+            border-width: 0 1px 1px 1px;
+            border-radius: 0 0 6px 6px;
+            border-style: solid;
+            border-color: $border-color;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .edit-text{
+                font-size: 14px;
+                line-height: 1.7;
+                font-weight: 500;
+                color: $text-color_2;
+                span {
+                    color: $text-color_3;
+                }
+                @media screen and (max-width: 575px){
+                    font-size: 12px;
+                }
+            }
+            .edit-btn {
+                .btn-edit {
+                    display: inline-block;
+                    padding: 5px;
+                    text-align: center;
+                    width: 70px;
+                    @include border;
+                    color: $text-color_2;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 1;
+                    margin-bottom: 3px;
+                    &:hover {
+                        color: #fff;
+                        background-color: $main-color;
+                    }
+                    @media screen and (max-width: 575px){
+                        font-size: 12px;
+                    }
+                } 
+            }
+        }
+    }
 }
+
 #block-upload {
     border-radius: 6px 6px 0 0;
     margin-bottom: 0;
@@ -2672,6 +2793,7 @@
     border-style: solid;
     border-color: $border-color;
     border-radius: 0 0 6px 6px;
+    min-height: 51px;
     span {
         font-size: 14px;
         font-weight: 600;
@@ -2716,7 +2838,78 @@
         line-height: 2;
     }
 }
-
+.support {
+    padding: 60px 0;
+    .btn-send {
+        display: block;
+        margin: 0 auto 0 auto;
+    }
+    @media screen and (max-width: 991px) {
+        padding: 60px 10px;
+    }
+}
+.support-form{
+    padding: 60px 70px;
+    min-height: 300px;
+    background-color: transparent;
+    @include border;
+    @media screen and (max-width: 767px) {
+        padding: 25px;
+    }
+}
+.sprt-label{
+    font-size: 12px;
+    color: $text-color_3;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+.sprt-input, .sprt-message {
+    padding: 12px 0 12px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    color: $text-color_2;
+    margin-bottom: 10px;
+    width: 100%;
+    @include border;
+    text-align: left;
+}
+.wrp-textarea {
+    position: relative;
+}
+.sprt-message{
+    min-height: 210px;
+    margin-bottom: 40px;
+    resize: none;
+    position: relative;
+    outline: none;
+    &:focus {
+        border-color: $main-color;
+    }
+}
+.attach-file{
+    width: 42px;
+    height: 42px;
+    border: 1px solid $border-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 60px;
+    right: 15px;
+    &:hover {
+        border-color: $main-color;
+        i{
+            color: $main-color;
+        }
+    }
+    i {
+        font-size: 16px;
+        color: $border-color;
+    }
+}
 // POPAP
 
 ///---login
@@ -2945,4 +3138,8 @@
 .btn-view {
     @include ct-button(172px, $white-color, $text-color_1);
     margin-right: 10px;
+}
+.btn-send{
+    @include btn-110($main-color);
+    color: $white-color;
 }
