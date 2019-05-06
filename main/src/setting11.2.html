@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>LogoSporte</title>
+    <link data-csp="header-favicon" rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+    //= template/header_const.html
+    <section class="settings settings--2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title">
+                        <h1>Settings</h1>
+                    </div>
+                    <div class="wrp-step">
+                        <div class="step"><span class="step-text">General</span></div>
+                        <div class="step"><span class="step-text">Password</span></div>
+                        <div class="step activ"><span class="step-text">Verification</span></div>
+                    </div>
+                    <div class="wrp-mob-step">
+                        <button class="nav left">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="mob-step"><span>General</span></div>
+                        <div class="mob-step"><span>Password</span></div>
+                        <div class="mob-step activ"><span>Verification</span></div>
+                        <button class="nav right">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <span class="cnst-subtitle">
+                        Verification
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-8 col-sm-12">
+                    <div class="stg-row">
+                        <span class="subtitle">
+                            1. Conditions to the photo
+                        </span>
+                        <ul class="stg__list">
+                            <li class="stg__items">
+                                <p class="stg__text">
+                                    &mdash; clear photo
+                                </p>
+                            </li>
+                            <li class="stg__items">
+                                <p class="stg__text">
+                                    &mdash; color photography
+                                </p>
+                            </li>
+                            <li class="stg__items">
+                                <p class="stg__text">
+                                    &mdash; prominent all 4 corners of the photo
+                                </p>
+                            </li>
+                            <li class="stg__items">
+                                <p class="stg__text">
+                                    &mdash; direct view
+                                </p>
+                            </li>
+                            <li class="stg__items">
+                                <p class="stg__text">
+                                    &mdash; no glare and don't use flash
+                                </p>
+                            </li>
+                            <li class="stg__items">
+                                <p class="stg__text">
+                                    &mdash; photo does not have an inscription and a watermark
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <form action="" class="setting-ver">
+                        <div class="stg-row">
+                            <span class="subtitle">
+                                2. Choose your country
+                            </span>
+                            <div class="wrp-brief">
+                                <div class="select-wrapper">
+                                    <i class="fas fa-angle-down"></i>
+                                    <select name="gnv_country" class="select-brief" value="">
+                                        <option value="" selected="" disabled="" hidden="">Russia</option>
+                                        <option>England</option>
+                                        <option>France</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stg-row">
+                            <span class="subtitle">
+                                3. Type of document
+                            </span>
+                            <div class="wrp-brief">
+                                <div class="select-wrapper">
+                                    <i class="fas fa-angle-down"></i>
+                                    <select name="type_document" class="select-brief" value="">
+                                        <option value="" selected="" disabled="" hidden="">Pasport</option>
+                                        <option>Pasport</option>
+                                        <option>Pasport</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stg-row">
+                            <span class="subtitle">
+                                4. Upload photo (choose file for 1 page)
+                                and for second page
+                            </span>
+                            <div class="row">
+                                <div class="col-lg-6 p-0">
+                                    <a href="" class="block-upload">
+                                        <i class="fas fa-arrow-down"></i>
+                                        <span>
+                                            Upload file
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6  p-0">
+                                    <a href="" class="block-upload">
+                                        <i class="fas fa-arrow-down"></i>
+                                        <span>
+                                            Upload file
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stg-row">
+                            <button class="btn-sendr">
+                                Send for review
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-fifth">
+        //= template/footer.html
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

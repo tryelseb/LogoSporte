@@ -74,7 +74,11 @@ i {
 .btn:first-child {
     margin-right: 15px;
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
 .title {
   margin-bottom: 27px;
     &>* {
@@ -98,7 +102,7 @@ i {
 a:hover {
     text-decoration: none;
 }
-input:focus {
+textarea:focus, input:focus {
     border: 1px solid $main-color !important;
     outline: none;
 }
