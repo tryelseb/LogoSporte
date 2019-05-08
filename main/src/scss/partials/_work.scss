@@ -1,0 +1,103 @@
+.work {
+    padding: 90px 0;
+
+    .sort {
+        border: none;
+        align-items: center;
+        justify-content: flex-end;
+
+        .sort__items {
+            @media screen and (max-width: 767px) {
+                width: 100%;
+                padding: 10px;
+                margin: 0;
+            }
+
+            &:nth-child(2) {
+                @media screen and (max-width: 767px) {
+                    border-color: $border-color;
+                    border-style: solid;
+                    border-width: 1px 1px 1px 1px;
+                    border-radius: 6px 0 0 6px;
+                }
+            }
+
+            &:nth-child(3) {
+                @media screen and (max-width: 767px) {
+                    border-color: $border-color;
+                    border-style: solid;
+                    border-width: 1px 1px 1px 0;
+                    border-radius: 0 6px 6px 0;
+                }
+
+            }
+
+            &:first-child {
+                @media screen and (max-width: 767px) {
+                    display: none;
+                }
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+
+            justify-content: center;
+        }
+    }
+
+    .title {
+        @media screen and (max-width: 767px) {
+            margin: 0;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 25px 0;
+    }
+}
+
+.blck-work {
+    max-width: 268px;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+    @media screen and (max-width: 991px) {
+        margin: 0 auto 30px;
+    }
+
+    &:hover .f-block,
+    &:hover .s-block {
+        border-color: $main-color;
+    }
+}
+
+.f-block {
+    width: 100%;
+    height: 168px;
+    border-width: 1px 1px 0 1px;
+    border-color: $border-color;
+    border-style: solid;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+
+    img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.s-block {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-width: 1px;
+    border-color: $border-color;
+    border-style: solid;
+    border-radius: 0 0 6px 6px;
+}
