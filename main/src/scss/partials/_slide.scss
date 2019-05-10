@@ -4,13 +4,13 @@
 }
 
 .wrp-slider {
-    max-width: 1170px;
+    width: 1110px;
     min-height: 450px;
     height: 1px;
     display: flex;
     @media screen and (max-width: 900px) {
         flex-direction: column;
-         height: auto;
+        height: auto;
     }
 }
 .slider {
@@ -18,7 +18,6 @@
     width: 74%;
     height: 100%;
     border-radius: 6px 0 0 6px;
-    background-color: red;
     @media screen and (max-width: 1200px) {
         width: 60%;
     }
@@ -39,6 +38,28 @@
     display: flex;  
     align-items: center;
     justify-content: center;
+    z-index: 999;
+    .wrp-slider {
+        margin: 0 15px;
+    }
+}
+.bg-popup--not {
+    .slider {
+        width: 100%;
+        border-radius: 6px;
+    }
+    .slider-img {
+        border-radius: 6px;
+    }
+    .close-btn {
+        background-color: #fff;
+        right: -15px;
+        top: -15px;
+        @media screen and (max-width: 450px) {
+            right: -5px;
+            top: -5px;
+        }
+    }
 }
 
 .close-btn {
