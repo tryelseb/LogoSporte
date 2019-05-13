@@ -2468,7 +2468,9 @@
         cursor: pointer;
 
         &:hover .prf-image,
-        &:hover .prf-icon {
+        &:hover .prf-icon,
+        &:hover .prf-title,
+        &:hover .edit-block {
             border-color: $main-color;
         }
         /// winers //.
@@ -2504,18 +2506,69 @@
 
         .prf-image {
             min-height: 180px;
+            height: 1px;
             border: 1px solid $border-color;
             border-radius: 6px 6px 0 0;
             position: relative;
-
-            img {
-                position: absolute;
-                left: 0;
-                top: 0;
-                right: 0;
-                bottom: 0;
+            a {
+                display: block;
                 width: 100%;
                 height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    &:hover {
+                        border: 1px solid $main-color;
+                    }
+                }
+            }
+            .one-img,
+            .count-img,
+            .three-img {
+                width: 100%;
+                height: 100%;
+            }
+            .one-img {                
+                img {
+                    border-radius: 6px 6px 0 0;
+                }
+            }
+            .count-img {
+                display: flex;
+                .first-image,
+                .second-image {
+                    width: 50%;
+                }
+                .first-image {
+                    border-top-left-radius: 6px;
+                    img{
+                        border-top-left-radius: 6px;
+                    }
+                }
+                .second-image {
+                    border-top-right-radius: 6px;
+                    img {
+                        border-top-right-radius: 6px;
+                    }
+                    
+                }
+            }
+            .count-img--3{
+                flex-direction: column;
+                .wrp-few {
+                    height: 50%;
+                    display: flex;
+                }
+                .third-image {
+                    height: 50%;
+                }
+            }
+            .count-img--4 {
+                .third-image,
+                .fouth-image {
+                    width: 50%;
+                    height: 100%;
+                } 
             }
         }
 
@@ -2527,13 +2580,24 @@
             font-weight: 600;
             color: $text-color_2;
             padding: 14px;
-            border: 1px solid $border-color;
-
+            border-width: 0 1px 1px 1px;
+            border-color: $border-color;
+            border-style: solid;
+            a {
+             color: $text-color_2;
+             &:hover {
+                color: $main-color;
+            }
+            }
             .round {
                 font-size: 12px;
                 font-weight: 500;
                 line-height: 1.6;
                 color: $text-color_3;
+                display: block;
+                &:hover {
+                    color: $main-color;
+                }
 
                 @media screen and (max-width: 575px) {
                     font-size: 10px;
@@ -2631,6 +2695,15 @@
     }
 
     &--dsg {
+        .col-lg-3.col-md-6.col-sm-12 {
+            &:hover #block-upload {
+                border-color: $main-color;
+            }
+            &:hover .prf-icon {
+                border-color: $main-color;
+            }
+        }
+
         .btn-design {
             @include ct-button(157px, $white-color, $text-color_1);
 
@@ -2863,18 +2936,21 @@
     border-radius: 0 0 6px 6px;
     min-height: 51px;
 
-    span {
+    a {
         font-size: 14px;
         font-weight: 600;
         color: $text-color_2;
         line-height: 1.3;
-
+        &:hover {
+            color: $main-color;
+        }
         @media screen and (max-width: 575px) {
             font-size: 12px;
         }
     }
 
     &--hr {
+        justify-content: center;
         .icon {
             &:hover {
                 &:hover {
@@ -3259,9 +3335,7 @@
 /// --------------- ///
 ///Profile - popap
 .popap-profile {
-    .wrp-btn{
-        justify-content: flex-end;
-    }
+    
 }
 /////////-----------////////////
 // Button
