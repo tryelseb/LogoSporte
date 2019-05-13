@@ -1,5 +1,6 @@
 //= ../../bower_components/jquery/dist/jquery.js
 //= partials/owl.carousel.min.js
+//= partials/masonry.min.js
 
 
 // // Menu
@@ -30,6 +31,7 @@ if($("div").is(".file-attach")) {
 }
 
 
+
 //Go to top
 jQuery(document).ready(function ($) {
   var speed = 500,
@@ -49,6 +51,13 @@ jQuery(document).ready(function ($) {
   });
   show_scrollTop();
 });
+////
+$('.masonry-container').masonry({
+  // options
+  itemSelector: '.masonry-item',
+  columnWidth: '.masonry-item'
+});
+////
 // Slider
 
 $(document).ready(function () {
@@ -145,6 +154,8 @@ $(document).ready(function () {
   });
   $(window).on('load resize', windowSize);
 });
+
+
 // list 
 function test() {
   var ele = document.getElementsByClassName('r1');
