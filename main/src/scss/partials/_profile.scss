@@ -44,6 +44,14 @@
             min-width: 100px !important;
         }
     }
+    .btn-work:hover {
+        background-color: darken(white, 15%) !important;
+        color: #3b3b3b !important;
+    }
+    .btn-add:hover {
+        background-color: $main-color;
+        color: #fff;
+    }
 }
 
 .p-name {
@@ -69,32 +77,14 @@
     @media screen and (max-width: 575px) {
         font-size: 14px;
     }
-
-    &:before {
-        content: '';
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        top: -4px;
-        right: -10px;
-        background-color: #ffad17;
-        border-radius: 50%;
-    }
-
-    &:after {
-        content: '\f00c';
-        font-family: "Font Awesome 5 Free";
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        top: -2px;
-        right: -11px;
-        color: #fff;
-        font-size: 7px;
-        border-radius: 50%;
-    }
+.done-y {
+    font-size: 12px;
+    color: #ffad17;
+    position: absolute;
+    top: -5px;
+    right: -12px;
 }
-
+}
 .p-icon {
     display: flex;
 
@@ -106,6 +96,7 @@
     .p-md {
         position: relative;
         display: block;
+        cursor: pointer;
         .numeric {
             height: 13px;
             width: 13px;
@@ -122,13 +113,15 @@
             right: -6px;
             top: -6px;
         }
+        &:hover .numeric {
+            background-color: $main-color;
+        }
 
         &:not(:last-child) {
             margin-right: 16px;
         }
     }
 }
-
 .p-wrp {
     min-height: 98px;
     margin-bottom: 30px;
