@@ -1,0 +1,1993 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>LogoSporte</title>
+    <link data-csp="header-favicon" rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+    //= template/header_const.html
+    <section class="profile contest">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-12">
+                    <div class="wrp-contest">
+                        <div class="title">
+                            <h1>My contest</h1>
+                        </div>
+                        <div class="contest-list">
+                            <button class="btn-work">Add new work</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-30">
+                <div class="col col-lg-12">
+                    <div class="block-navigate">
+                        <ul class="list">
+                            <li class="list__items">
+                                <a href="" class="list__link activ">all</a>
+                            </li>
+                            <li class="list__items">
+                                <a href="" class="list__link">finished</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row prf-hack pos-r">
+                <a href="#" class="mob-btn" id="mob-btn" onclick="contest()">
+                    <i class="fas fa-ellipsis-v"></i>
+                </a>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="wrp-works">
+                        <a href="#" class="works">Design for tehnology company</a>
+                        <ul class="cinfo__list">
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">Round 1</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">2 days to next step</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">451 design concept</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">45 logos selected</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 pos-s">
+                    <ul class="cnav__list" id="cnav__list">
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Promote to top</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Transaction</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Cancel project</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="mob__link">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row mb prf-hack pos-r">
+                <a href="#" class="mob-btn" id="mob-btn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </a>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="wrp-works">
+                        <a href="#" class="works">Design for travel company</a>
+                        <ul class="cinfo__list">
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">Round 1</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">1 days to next step</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">0 design concept</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">45 logos selected</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 pos-s">
+                    <ul class="cnav__list">
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Cancel project</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="btn-payment">Transaction</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="mob__link">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row prf-hack mb-30 pos-r">
+                <a href="#" class="mob-btn" id="mob-btn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </a>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="wrp-works">
+                        <a href="#" class="works">Design for travel company</a>
+                        <ul class="cinfo__list">
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">Round 2</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">1 days to next step</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">451 design concept</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 pos-s">
+                    <ul class="cnav__list">
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Promote to top</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Transaction</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Cancel project</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">
+                                <i class="fas fa-chevron-up"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="mob__link">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-6">
+                    <ul class="sort__list">
+                        <li class="sort__items">
+                            <a href="" class="sort__link">
+                                All works
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            <a href="" class="sort__link">
+                                Favorites
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            <a href="" class="sort__link">
+                                Delected works
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            Sort by:
+                            <a href="" class="sort__link">
+                                default
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mb-15">
+                <div class="col-12 d-flex align-items-center justify-content-start">
+                    <img src="images/profile-icon.png" alt="" class="profile-img">
+                    <div class="profile-content">
+                        <span class="profile-name">
+                            dmitryburnos
+                        </span>
+                        <div class="wrp-info">
+                            <a href="#" class="profile-folowers">
+                                1241
+                            </a>
+                            <a href="#" class="profile-works">
+                                21 works
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <a href="#" class="medal-number">
+                                <img src="images/contest-icon.svg" alt="">
+                            </a>
+                            <a href="#" class="btn-files">
+                                Files
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row my-row__stp-6">
+                <div class="wrp-plz wrp-plz__stp-6">
+                    <input type="range" id="r1" value="20">
+                    <div id="color" class="color" style="width: 20%;"></div>
+                </div>
+            </div>
+            <div class="row mb-15">
+                <div class="col-12 d-flex align-items-center justify-content-start">
+                    <img src="images/profile-icon.png" alt="" class="profile-img">
+                    <div class="profile-content">
+                        <span class="profile-name">
+                            dmitryburnos
+                        </span>
+                        <div class="wrp-info">
+                            <a href="#" class="profile-folowers">
+                                1241
+                            </a>
+                            <a href="#" class="profile-works">
+                                21 works
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-30">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <a href="#" class="medal-number">
+                                <img src="images/contest-icon-2.svg" alt="">
+                            </a>
+                            <a href="#" class="btn-files">
+                                Files
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-15">
+                <div class="col-12 d-flex align-items-center justify-content-start">
+                    <img src="images/profile-icon.png" alt="" class="profile-img">
+                    <div class="profile-content">
+                        <span class="profile-name">
+                            dmitryburnos
+                        </span>
+                        <div class="wrp-info">
+                            <a href="#" class="profile-folowers">
+                                1241
+                            </a>
+                            <a href="#" class="profile-works">
+                                21 works
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-30">
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-p">
+                <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                    <div class="page">
+                        <ul class="page__list">
+                            <li class="page__items"><a href="#" class="page__link">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="page__items"><a href="#" class="page__link activ">1</a></li>
+                            <li class="page__items"><a href="#" class="page__link">2</a></li>
+                            <li class="page__items"><a href="#" class="page__link">3</a></li>
+                            <li class="page__items"><a href="#" class="page__link">...</a></li>
+                            <li class="page__items"><a href="#" class="page__link">24</a></li>
+                            <li class="page__items"><a href="#" class="page__link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row prf-hack mb-30 pos-r">
+                <a href="#" class="mob-btn" id="mob-btn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </a>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="wrp-works">
+                        <a href="#" class="works">Design for travel company</a>
+                        <ul class="cinfo__list">
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">Round 2</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">1 days to next step</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">451 design concept</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 pos-s">
+                    <ul class="cnav__list">
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Promote to top</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Transaction</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Cancel project</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">
+                                <i class="fas fa-chevron-up"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="mob__link">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <ul class="sort__list">
+                        <li class="sort__items">
+                            <a href="" class="sort__link">
+                                All works
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            <a href="" class="sort__link">
+                                Favorites
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            <a href="" class="sort__link activ">
+                                Only works
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            <a href="" class="sort__link">
+                                Delected works
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            Sort by:
+                            <a href="" class="sort__link">
+                                default
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 text-right">
+                    <p class="sort__text">
+                        <span>45</span>
+                        logos selected
+                    </p>
+                </div>
+            </div>
+            <div class="row bc-mb">
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb prf-hack pos-r">
+                <a href="#" class="mob-btn" id="mob-btn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </a>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="wrp-works">
+                        <a href="#" class="works">Design for tehnology company
+                            <span class="dec-circle"></span>
+                        </a>
+                        <ul class="cinfo__list">
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">Round 1</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">2 days to next step</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">451 design concept</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">45 logos selected</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 pos-s">
+                    <ul class="cnav__list">
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Promote to top</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Transaction</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Cancel project</a>
+                        </li>
+
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                     <a href="#" class="mob__link">
+                         <i class="fas fa-chevron-down"></i>
+                     </a>
+                </div>
+            </div>
+            <div class="row mb prf-hack pos-r">
+                <a href="#" class="mob-btn" id="mob-btn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </a>
+                <div class="col-lg-7 col-md-12 col-sm-12 pos-r">
+                    <div class="wrp-works">
+                        <a href="#" class="works">Design for tehnology company</a>
+                        <ul class="cinfo__list">
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">Round 1</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">2 days to next step</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">451 design concept</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">45 logos selected</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 pos-s">
+                    <ul class="cnav__list">
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Promote to top</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Transaction</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Cancel project</a>
+                        </li>
+
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">
+                                <i class="fas fa-chevron-up"></i>
+                            </a>
+                        </li>
+                    </ul>
+                     <a href="#" class="mob__link">
+                         <i class="fas fa-chevron-down"></i>
+                     </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <ul class="sort__list">
+                        <li class="sort__items">
+                            <a href="" class="sort__link">
+                                All works
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            <a href="" class="sort__link">
+                                Favorites
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            <a href="" class="sort__link activ">
+                                Only works
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            <a href="" class="sort__link">
+                                Delected works
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            Sort by:
+                            <a href="" class="sort__link">
+                                default
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 text-right">
+                    <p class="sort__text sort__text--stl">
+                        <span>2</span>
+                        logos selected
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="w-block">
+                        <span>You need to select a minimum of 5 works to the Round 2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row bc-mb">
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-p">
+                <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                    <div class="page">
+                        <ul class="page__list">
+                            <li class="page__items"><a href="#" class="page__link">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="page__items"><a href="#" class="page__link activ">1</a></li>
+                            <li class="page__items"><a href="#" class="page__link">2</a></li>
+                            <li class="page__items"><a href="#" class="page__link">3</a></li>
+                            <li class="page__items"><a href="#" class="page__link">...</a></li>
+                            <li class="page__items"><a href="#" class="page__link">24</a></li>
+                            <li class="page__items"><a href="#" class="page__link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb prf-hack pos-r">
+                <a href="#" class="mob-btn" id="mob-btn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </a>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="wrp-works">
+                        <a href="#" class="works">Design for tehnology company</a>
+                        <ul class="cinfo__list">
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">Round 1</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">2 days to next step</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">451 design concept</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">45 logos selected</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 pos-s">
+                    <ul class="cnav__list">
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Promote to top</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Transaction</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Cancel project</a>
+                        </li>
+
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">
+                                <i class="fas fa-chevron-up"></i>
+                            </a>
+                        </li>
+                    </ul>
+                     <a href="#" class="mob__link">
+                         <i class="fas fa-chevron-down"></i>
+                     </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <ul class="sort__list">
+                        <li class="sort__items">
+                            <a href="" class="sort__link activ">
+                                All works
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            <a href="" class="sort__link">
+                                Favorites
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            <a href="" class="sort__link">
+                                Only works
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            <a href="" class="sort__link">
+                                Delected works
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            Sort by:
+                            <a href="" class="sort__link">
+                                default
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 text-right">
+                    <p class="sort__text">
+                        <span>45</span>
+                        logos selected
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest w-profile">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-profile">
+                            <img src="images/profile-icon.png" alt="" class="profile-img">
+                            <div class="profile-content">
+                                <span class="profile-name">
+                                    dmitryburnos
+                                </span>
+                                <div class="wrp-info">
+                                    <a href="#" class="profile-folowers">
+                                        12 421
+                                    </a>
+                                    <a href="#" class="profile-works">
+                                        21 works
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link activ">
+                                    <i class="fas fa-folder"></i>
+                                    <span class="activ">1</span>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest w-profile">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-profile">
+                            <img src="images/profile-icon.png" alt="" class="profile-img">
+                            <div class="profile-content">
+                                <span class="profile-name">
+                                    dmitryburnos
+                                </span>
+                                <div class="wrp-info">
+                                    <a href="#" class="profile-folowers">
+                                        12 421
+                                    </a>
+                                    <a href="#" class="profile-works">
+                                        21 works
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-folder"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest w-profile">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-profile">
+                            <img src="images/profile-icon.png" alt="" class="profile-img">
+                            <div class="profile-content">
+                                <span class="profile-name">
+                                    dmitryburnos
+                                </span>
+                                <div class="wrp-info">
+                                    <a href="#" class="profile-folowers">
+                                        12 421
+                                    </a>
+                                    <a href="#" class="profile-works">
+                                        21 works
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-folder"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest w-profile">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-profile">
+                            <img src="images/profile-icon.png" alt="" class="profile-img">
+                            <div class="profile-content">
+                                <span class="profile-name">
+                                    dmitryburnos
+                                </span>
+                                <div class="wrp-info">
+                                    <a href="#" class="profile-folowers">
+                                        12 421
+                                    </a>
+                                    <a href="#" class="profile-works">
+                                        21 works
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-folder"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest w-profile">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-profile">
+                            <img src="images/profile-icon.png" alt="" class="profile-img">
+                            <div class="profile-content">
+                                <span class="profile-name">
+                                    dmitryburnos
+                                </span>
+                                <div class="wrp-info">
+                                    <a href="#" class="profile-folowers">
+                                        12 421
+                                    </a>
+                                    <a href="#" class="profile-works">
+                                        21 works
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link activ">
+                                    <i class="fas fa-folder"></i>
+                                    <span class="activ">1</span>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest w-profile">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-profile">
+                            <img src="images/profile-icon.png" alt="" class="profile-img">
+                            <div class="profile-content">
+                                <span class="profile-name">
+                                    dmitryburnos
+                                </span>
+                                <div class="wrp-info">
+                                    <a href="#" class="profile-folowers">
+                                        12 421
+                                    </a>
+                                    <a href="#" class="profile-works">
+                                        21 works
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-folder"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest w-profile">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-profile">
+                            <img src="images/profile-icon.png" alt="" class="profile-img">
+                            <div class="profile-content">
+                                <span class="profile-name">
+                                    dmitryburnos
+                                </span>
+                                <div class="wrp-info">
+                                    <a href="#" class="profile-folowers">
+                                        12 421
+                                    </a>
+                                    <a href="#" class="profile-works">
+                                        21 works
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-folder"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest w-profile">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-profile">
+                            <img src="images/profile-icon.png" alt="" class="profile-img">
+                            <div class="profile-content">
+                                <span class="profile-name">
+                                    dmitryburnos
+                                </span>
+                                <div class="wrp-info">
+                                    <a href="#" class="profile-folowers">
+                                        12 421
+                                    </a>
+                                    <a href="#" class="profile-works">
+                                        21 works
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-folder"></i>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-p">
+                <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                    <div class="page">
+                        <ul class="page__list">
+                            <li class="page__items"><a href="#" class="page__link">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="page__items"><a href="#" class="page__link activ">1</a></li>
+                            <li class="page__items"><a href="#" class="page__link">2</a></li>
+                            <li class="page__items"><a href="#" class="page__link">3</a></li>
+                            <li class="page__items"><a href="#" class="page__link">...</a></li>
+                            <li class="page__items"><a href="#" class="page__link">24</a></li>
+                            <li class="page__items"><a href="#" class="page__link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb prf-hack pos-r">
+                <a href="#" class="mob-btn" id="mob-btn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </a>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="wrp-works">
+                        <a href="#" class="works">Design for tehnology company</a>
+                        <ul class="cinfo__list">
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">Round 1</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">2 days to next step</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">451 design concept</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">45 logos selected</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 pos-s">
+                    <ul class="cnav__list">
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Promote to top</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Transaction</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Cancel project</a>
+                        </li>
+
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">
+                                <i class="fas fa-chevron-up"></i>
+                            </a>
+                        </li>
+                    </ul>
+                     <a href="#" class="mob__link">
+                         <i class="fas fa-chevron-down"></i>
+                     </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9 col-md-12 col-sm-12">
+                    <ul class="sort__list">
+                        <li class="sort__items">
+                            <a href="" class="sort__link">
+                                All works
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            <a href="" class="sort__link">
+                                Favorites
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            <a href="" class="sort__link">
+                                Only works
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            <a href="" class="sort__link activ">
+                                Delected works
+                            </a>
+                        </li>
+                        <li class="sort__items">
+                            Sort by:
+                            <a href="" class="sort__link">
+                                default
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 text-right">
+                    <p class="sort__text">
+                        <span>45</span>
+                        logos selected
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest w-cancel">
+                        <a href="#" class="block-img">
+
+                            <span class="declined">
+                                Declined
+                            </span>
+                        </a>
+                        <div class="block-content">
+                            <a href="#" class="link-title">
+                                Design for tehnology company
+                            </a>
+                            <a href="#" class="profile-folowers">
+                                17
+                            </a>
+                        </div>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest w-cancel">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                            <span class="declined">
+                                Declined
+                            </span>
+                        </a>
+                        <div class="block-content">
+                            <a href="#" class="link-title">
+                                Design for tehnology company
+                            </a>
+                            <a href="#" class="profile-folowers">
+                                17
+                            </a>
+                        </div>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest w-cancel">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                            <span class="declined">
+                                Declined
+                            </span>
+                        </a>
+                        <div class="block-content">
+                            <a href="#" class="link-title">
+                                Design for tehnology company
+                            </a>
+                            <a href="#" class="profile-folowers">
+                                17
+                            </a>
+                        </div>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest w-cancel">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                            <span class="declined">
+                                Declined
+                            </span>
+                        </a>
+                        <div class="block-content">
+                            <a href="#" class="link-title">
+                                Design for tehnology company
+                            </a>
+                            <a href="#" class="profile-folowers">
+                                17
+                            </a>
+                        </div>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest w-cancel">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                            <span class="declined">
+                                Declined
+                            </span>
+                        </a>
+                        <div class="block-content">
+                            <a href="#" class="link-title">
+                                Design for tehnology company
+                            </a>
+                            <a href="#" class="profile-folowers">
+                                17
+                            </a>
+                        </div>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest w-cancel">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                            <span class="declined">
+                                Declined
+                            </span>
+                        </a>
+                        <div class="block-content">
+                            <a href="#" class="link-title">
+                                Design for tehnology company
+                            </a>
+                            <a href="#" class="profile-folowers">
+                                17
+                            </a>
+                        </div>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest w-cancel">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                            <span class="declined">
+                                Declined
+                            </span>
+                        </a>
+                        <div class="block-content">
+                            <a href="#" class="link-title">
+                                Design for tehnology company
+                            </a>
+                            <a href="#" class="profile-folowers">
+                                17
+                            </a>
+                        </div>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest w-cancel">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                            <span class="declined">
+                                Declined
+                            </span>
+                        </a>
+                        <div class="block-content">
+                            <a href="#" class="link-title">
+                                Design for tehnology company
+                            </a>
+                            <a href="#" class="profile-folowers">
+                                17
+                            </a>
+                        </div>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-p">
+                <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                    <div class="page">
+                        <ul class="page__list">
+                            <li class="page__items"><a href="#" class="page__link">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="page__items"><a href="#" class="page__link activ">1</a></li>
+                            <li class="page__items"><a href="#" class="page__link">2</a></li>
+                            <li class="page__items"><a href="#" class="page__link">3</a></li>
+                            <li class="page__items"><a href="#" class="page__link">...</a></li>
+                            <li class="page__items"><a href="#" class="page__link">24</a></li>
+                            <li class="page__items"><a href="#" class="page__link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-fifth">
+        //= template/footer.html
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

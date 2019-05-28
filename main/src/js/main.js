@@ -21,7 +21,7 @@ $("#navToggle").click(function () {
 
 
 //chat
-if($("div").is(".file-attach")) {
+if ($("div").is(".file-attach")) {
   console.log("sadas");
   $(".chat-all").addClass("all-mob");
   $(".chat-sct").addClass("sct-mob");
@@ -44,7 +44,7 @@ jQuery(document).ready(function ($) {
   });
 
   function show_scrollTop() {
-    ($(window).scrollTop() > 300) ? $scrollTop.fadeIn(600) : $scrollTop.fadeOut(600);
+    ($(window).scrollTop() > 300) ? $scrollTop.fadeIn(600): $scrollTop.fadeOut(600);
   }
   $(window).scroll(function () {
     show_scrollTop();
@@ -142,7 +142,7 @@ $(document).ready(function () {
           }
         }
       });
-      
+
     }
   }
 
@@ -161,6 +161,7 @@ function test() {
   var ele = document.getElementsByClassName('r1');
   for (var i = 0; i < ele.length; i++) {
     console.log(i);
+
     function fun1(i) {
       console.log(i);
       var rng = document.getElementsByClassName('r1')[i];
@@ -188,4 +189,14 @@ function load() {
 }
 load();
 
-///tootip
+function contest() {
+  var contest_list = document.getElementById('cnav__list');
+  contest_list.classList.toggle('mob-activ');
+  contest_list.animate([{
+      opacity: '0'
+    },
+    {
+      opacity: '1'
+    },
+  ], 300);
+}

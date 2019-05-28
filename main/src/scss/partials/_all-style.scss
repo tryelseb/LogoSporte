@@ -1484,7 +1484,7 @@
 }
 
 .profile-content {
-    width: 100px;
+    min-width: 115px;
 }
 
 .profile-name {
@@ -1492,7 +1492,10 @@
     font-weight: 600;
     color: $text-color_1;
     font-size: 14px;
-
+    cursor: pointer;
+    &:hover {
+        color: $main-color;
+    }
     @media screen and (max-width: 575px) {
         font-size: 12px;
     }
@@ -1504,25 +1507,13 @@
     align-items: center;
     justify-content: space-between;
 
-    .profile-folowers {
-        display: block;
-        padding-left: 17px;
-        font-size: 12px;
-        position: relative;
-
-        &:after {
-            content: '\f004';
-            position: absolute;
-            font-family: "Font Awesome 5 Free";
-            top: 0;
-            left: 0;
-            color: #fa5120;
-            font-weight: bold;
-        }
-    }
-
     .profile-works {
         font-size: 12px;
+        color: $text-color_3;
+        cursor: pointer;
+        &:hover {
+            color: $main-color;
+        }
     }
 }
 
@@ -1557,7 +1548,26 @@
         }
     }
 }
-
+.profile-folowers {
+    display: block;
+    padding-left: 17px;
+    font-size: 12px;
+    position: relative;
+    color: $text-color_3;
+    cursor: pointer;
+    &:hover {
+        color: $main-color;
+    }
+    &:after {
+        content: '\f004';
+        position: absolute;
+        font-family: "Font Awesome 5 Free";
+        top: 0;
+        left: 0;
+        color: #fa5120;
+        font-weight: bold;
+    }
+}
 .fa-check-circle {
     color: $border-color;
     font-size: 28px;
@@ -2638,60 +2648,8 @@
     }
 
     /// page 10.1
-    .btn-mywork {
-        @include ct-button(121px, $white-color, $text-color_1);
 
-        @media screen and (max-width: 575px) {
-            display: none;
-        }
-    }
-
-    .btn-mywork-phone {
-        display: none;
-
-        @media screen and (max-width: 575px) {
-            display: block;
-            @include ct-button(45px, $white-color, $text-color_1);
-            font-size: 14px;
-            padding: 10px 10px;
-
-            &:hover {
-                color: $main-color;
-            }
-        }
-    }
-
-    .wrp-content {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-
-        @media screen and (max-width: 575px) {
-            flex-direction: column;
-            align-items: flex-end;
-        }
-
-        .text {
-            font-size: 14px;
-            font-weight: 500;
-            color: $text-color_3;
-            line-height: 1.5;
-
-            @media screen and (max-width: 575px) {
-                margin-bottom: 10px;
-                font-size: 12px;
-            }
-        }
-
-        .wrp-button {
-            display: flex;
-            margin-left: 15px;
-
-            .btn-back {
-                margin-right: 15px;
-            }
-        }
-    }
+    
 
     &--dsg {
         .col-lg-3.col-md-6.col-sm-12 {
@@ -2863,6 +2821,58 @@
                     }
                 }
             }
+        }
+    }
+}
+.btn-mywork-phone {
+    display: none;
+
+    @media screen and (max-width: 575px) {
+        display: block;
+        @include ct-button(45px, $white-color, $text-color_1);
+        font-size: 14px;
+        padding: 10px 10px;
+
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+.btn-mywork {
+    @include ct-button(121px, $white-color, $text-color_1);
+
+    @media screen and (max-width: 575px) {
+        display: none;
+    }
+}
+.wrp-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media screen and (max-width: 575px) {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .text {
+        font-size: 14px;
+        font-weight: 500;
+        color: $text-color_3;
+        line-height: 1.5;
+
+        @media screen and (max-width: 575px) {
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+    }
+
+    .wrp-button {
+        display: flex;
+        margin-left: 15px;
+
+        .btn-back {
+            margin-right: 15px;
         }
     }
 }
@@ -3385,6 +3395,103 @@
 }
 
 /////////-----------////////////
+// popap contest 
+    .popap-contest {
+        position: relative;
+        max-width: 570px;
+        @include border;
+        padding: 60px 100px;
+        @media screen and (max-width: 610px) {
+            padding: 20px;
+        }
+        .title-ntf {
+            margin-bottom: 10px;
+        }
+        .wrp-brief {
+            min-width: 370px;
+            @media screen and (max-width: 610px){
+                min-width: 250px;
+            }
+            .select-brief {
+                background-color: #fff;
+            }
+        }
+        .title-select {
+            font-size: 12px;
+            font-weight: 500;
+            color: #bbb;
+            margin-bottom: 5px;
+            padding-left: 15px;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: -8px;
+                right: -12px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #e6e6e6;
+            }
+        }
+        .btn-payment {
+            background-color: #fff;
+            color: $text-color_1;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    .block-price {
+        text-align: center;
+        margin-bottom: 25px;
+        .price {
+            color:$text-color_3;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+            @media screen and (max-width: 610px) {
+                font-size: 12px;
+            }
+            span {
+                font-size: 36px;
+                font-weight: 700;
+                color: $main-color;
+            }
+        }
+    }
+    .price {
+        &__items {
+            display: flex;
+            justify-content: space-between;
+            span {
+                font-size: 14px;
+                font-weight: 500;
+                color: $text-color_3;
+                line-height: 1;
+                display: block;
+                white-space: nowrap;
+                &:nth-child(2){
+                    width: 65%;
+                    border-bottom: 2px dotted $border-color;
+                }
+                &:nth-child(1) {
+                }
+            }
+            margin-bottom: 10px;
+        }
+    }
+    .total-text {
+        color: $text-color_2;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: right;
+        span {
+            color: $main-color;
+        }
+    }
+/////
 // Button
 .btn-cansel,.btn-110w {
     @include btn-110($white-color);
@@ -3419,4 +3526,11 @@
 }
 .btn-add {
     @include ct-button(164px, $white-color, #3b3b3b);
+}
+
+.btn-payment {
+    @include ct-button(118px, $main-color, $white-color);
+    &:hover {
+        color: $white-color;
+    }
 }
