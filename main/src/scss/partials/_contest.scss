@@ -9,6 +9,15 @@
    .bc-mb .block-contest {
        margin-bottom: 30px;
    }
+   .wrp-step {
+       margin-top: 15px;
+       .step {
+           color: $text-color_3;
+           span {
+                   white-space: nowrap;
+           }
+       }
+   }
    .works {
     position: relative;
     display: inline-block !important;
@@ -399,4 +408,156 @@
      display: flex;
      align-items: center;
      justify-content: flex-start;
+}
+.about-company {
+    display: flex;
+    justify-content: space-between;
+    .cmp {
+        margin-right: 40px;
+        &__items {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: $text-color_3;
+            text-transform: capitalize;
+            @media screen and (max-width: 575px) {
+                font-size: 12px;
+            }
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .info {
+        &__items {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: $text-color_1;
+            text-transform: capitalize;
+            @media screen and (max-width: 575px) {
+                font-size: 12px;
+            }
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+.contest-info {
+    .wrp-brief {
+        margin-left: auto;
+        max-width: 135px;
+    }
+}
+.infc {
+    line-height: 1.5;
+    &__list {
+        margin-bottom: 30px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 575px) {
+            flex-direction: column;
+        }
+        
+        &:not(:last-child) {
+            margin-bottom: 21px;
+        }
+        .infc-questions {
+            max-width: 170px;
+            color: $text-color_3;
+            font-size: 16px;
+            font-weight: 600;
+            margin-right: 20px;
+            @media screen and (max-width: 575px) {
+                font-size: 14px;
+                max-width: 100%;
+                margin: 0 0 10px;
+            }
+        }
+
+        .infc-answer {
+            max-width: 355px;
+            color: $text-color_2;
+            font-size: 14px;
+            font-weight: 500;
+            @media screen and (max-width: 575px) {
+                font-size: 12px;
+                max-width: 100%;
+            }
+        }
+    }
+}
+.type-block,
+.color-block,
+.upload-block {
+    max-width: 170px;
+    min-height: 170px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    @include border;
+    &:hover {
+        border-color: $main-color;
+    }
+}
+.type-block {
+    display: block;
+}
+.color-block,
+.upload-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.color-block {
+   color: #fff;
+
+   &:hover {
+       color: #fff;
+   }
+
+   &.cl-1 {
+       background-color: #4ac420;
+   }
+
+   &.cl-2 {
+       background-color: #1a8bfa;
+   }
+
+   &.cl-3 {
+       background-color: #ffad17;
+   }
+
+   &.cl-4 {
+       background-color: #fa5120;
+   }
+}
+.upload-block {
+     color: $text-color_3;
+     font-size: 14px;   
+    i {
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+}
+.inden {
+    &__items {
+        color: $text-color_2;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+        &:first-child {
+            color: $text-color_3;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+    }
 }
