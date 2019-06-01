@@ -3373,3 +3373,9 @@
 .btn-add {
     @include ct-button(164px, $white-color, #3b3b3b);
 }
+.btn-payment {
+    @include ct-button(118px, $main-color, $white-color);
+    &:hover {
+        color: $white-color;
+    }
+}

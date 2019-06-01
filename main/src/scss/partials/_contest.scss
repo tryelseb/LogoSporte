@@ -1,0 +1,113 @@
+.contest {
+   .prf-hack {
+       margin-bottom: 15px !important;
+   } 
+}
+
+
+.block-navigate {
+    .list {
+        display: flex;
+        
+        &__link {
+            display: block;
+            width: 196px;
+            height: 42px;
+            text-transform: capitalize;
+            color: $text_color-2;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 42px;
+            text-align: center;
+            border-style: solid;
+            border-color: $border-color;
+            border-width: 1px;
+            transition: all .3s;
+            &.activ {
+                background-color: $main-color;
+                color: #fff;
+            }
+            &:hover{
+                color:#fff;
+                background-color: $main-color;
+            }
+        }
+        &__items {
+            &:first-child .list__link {
+                border-radius: 6px 0 0 6px;
+            }
+            &:last-child .list__link {
+                border-radius:  0 6px 6px 0;
+            }
+        }
+    }
+}
+.cinfo {
+    
+    &__list {
+        display: flex;
+    }
+    &__items {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    &__text {
+        font-size: 12px;
+        font-weight: 500;
+        color: $text_color-3;
+        line-height: 1.5;
+    }
+}
+.cnav {
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+    }
+    &__items{
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    &__link {
+        color: $text_color-1;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.5;
+        i {
+            color: $text_color-3;
+            &:hover{
+                color: $main-color;
+            }
+        }
+        &:hover{
+            color: $main-color;
+        }
+    }
+}
+.sort {
+    &__list {
+        display: flex;
+        margin: 5px 0 20px 0;
+    }
+    &__items {
+        font-size: 14px;
+        color: $text_color-1;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+    &__link {
+        color: $text_color-1;
+        &:hover {
+            & i {
+                color: $main-color;
+            }
+        }
+        i {
+            font-size: 10px;
+            color: $text_color-3;
+        }
+    }
+}
