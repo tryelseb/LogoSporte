@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>LogoSporte</title>
+    <link data-csp="header-favicon" rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+    //= template/header_const.html
+    <section class="profile contest">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-12">
+                    <div class="wrp-contest">
+                        <div class="title">
+                            <h1>My contest</h1>
+                        </div>
+                        <div class="contest-list">
+                            <button class="btn-work">Add contest</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row prf-hack mb-30 pos-r mob">
+                <a href="#" class="mob-btn" id="mob-btn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </a>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="wrp-works">
+                        <a href="#" class="works">Filter</a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-sm-12 pos-s">
+                    <form action="" class="filter-form">
+                        <div>
+                            <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox">
+                            <label for="checkbox-2" class="checkbox-custom-label">
+                                Garanted
+                            </label>
+                        </div>
+                        <div>
+                            <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox">
+                            <label for="checkbox-2" class="checkbox-custom-label">
+                                Part garanted
+                            </label>
+                        </div>
+                        <div>
+                            <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox">
+                            <label for="checkbox-2" class="checkbox-custom-label">
+                                Not garanted
+                            </label>
+                        </div>
+                        <div>
+                            <a href="" class="filter-input">
+                                <i class="fas fa-star"></i>
+                            </a>
+                            <label for="checkbox-2" class="label-filter">
+                                Favourites
+                            </label>
+                        </div>
+                        <a href="" class="cnav__link">
+                            <i class="fas fa-chevron-up"></i>
+                        </a>
+                    </form>
+                    <ul class="cnav__list">
+                        <li class="cnav__items">
+
+                        </li>
+                    </ul>
+                    <a href="#" class="mob__link">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+            <form action="" class="contest-form row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="wrp-brief">
+                        <span class="title-brief">
+                            Level contests
+                        </span>
+                        <div class="select-wrapper">
+                            <i class="fas fa-angle-down"></i>
+                            <select name="name_company" class="select-brief">
+                                <option>Medium</option>
+                                <option>Medium</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="wrp-brief">
+                        <span class="title-brief">
+                            Budget min
+                        </span>
+                        <div class="select-wrapper">
+                            <input type="text" name="name_search" class="input-brief" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="wrp-brief">
+                        <span class="title-brief">
+                            Sort by
+                        </span>
+                        <div class="select-wrapper">
+                            <i class="fas fa-angle-down"></i>
+                            <select name="name_company" class="select-brief">
+                                <option>Default</option>
+                                <option>Default</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="wrp-brief">
+                        <span class="title-brief">
+                            Budget max
+                        </span>
+                        <div class="select-wrapper">
+                            <input type="text" name="name_search" class="input-brief" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 my-d-flex">
+                    <div class="wrp-brief">
+                        <span class="title-brief">
+                            Languages
+                        </span>
+                        <div class="select-wrapper">
+                            <i class="fas fa-angle-down"></i>
+                            <select name="name_company" class="select-brief">
+                                <option>English</option>
+                                <option>English</option>
+                            </select>
+                        </div>
+                    </div>
+                    <ul class="status">
+                        <li class="status__items activ">
+                            <a href="" class="l">Open</a>
+                        </li>
+                        <li class="status__items">
+                            <a href="" class="l">Finish</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 my-d-flex">
+                    <div class="wrp-brief">
+                        <span class="title-brief">
+                            Time left
+                        </span>
+                        <div class="select-wrapper">
+                            <i class="fas fa-angle-down"></i>
+                            <select name="name_company" class="select-brief">
+                                <option>5 hours</option>
+                                <option>5 hours</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="mob-filter">
+                        <div class="wrp-brief">
+                            <span class="title-brief">
+                                Filter
+                            </span>
+                            <table class="table-filter" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <a href="" class="link-filet activ">
+                                            Garanted
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="link-filet activ">
+                                            Part garanted
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="" class="link-filet">
+                                            Not garanted
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="link-filet">
+                                            Favourites
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="" class="link-filet">
+                                            Open
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="link-filet">
+                                            Finish
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+            <div class="row mb-30">
+                <div class="col-12">
+                    <div class="prev-block">
+                        <div class="block-image">
+                            <img src="images/contest-img.jpg" alt="">
+                        </div>
+                        <div class="block-coni">
+                            <div class="main-ivo">
+                                <div class="ivo-row">
+                                    <a href="#" class="title-card">
+                                        Design for tehnology company
+                                    </a>
+                                    <a href="" class="icon-card">
+                                        <i class="fas fa-thumbtack activ-1"></i>
+                                    </a>
+                                    <a href="" class="icon-card">
+                                        <i class="far fa-star"></i>
+                                    </a>
+                                </div>
+                                <div class="ivo-row text">
+                                    <p class="sub-text">
+                                        Time limit:
+                                        <span>20 day</span>
+                                    </p>
+                                    <p class="sub-text">
+                                        Customer:
+                                        <span>akalikbergenov</span>
+                                    </p>
+                                </div>
+                                <div class="ivo-row">
+                                    <a href="" class="btn-card">Small</a>
+                                    <a href="" class="btn-card">Part garanted</a>
+                                </div>
+                            </div>
+                            <div class="main-price">
+                                <p class="price-t">
+                                    <span>700$</span>
+                                    Price
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-30">
+                <div class="col-12">
+                    <div class="prev-block">
+                        <div class="block-image">
+                            <img src="images/test-filter.jpg" alt="">
+                        </div>
+                        <div class="block-coni">
+                            <div class="main-ivo">
+                                <div class="ivo-row">
+                                    <a href="#" class="title-card">
+                                        Design for tehnology company
+                                    </a>
+                                    <a href="" class="icon-card">
+                                        <i class="far fa-star activ-2"></i>
+                                    </a>
+                                </div>
+                                <div class="ivo-row text">
+                                    <p class="sub-text">
+                                        Time limit:
+                                        <span>20 day</span>
+                                    </p>
+                                    <p class="sub-text">
+                                        Customer:
+                                        <span>akalikbergenov</span>
+                                    </p>
+                                </div>
+                                <div class="ivo-row">
+                                    <a href="" class="btn-card">Small</a>
+                                    <a href="" class="btn-card">Part garanted</a>
+                                </div>
+                            </div>
+                            <div class="main-price">
+                                <p class="price-t">
+                                    <span>1 800$</span>
+                                    Price
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-30">
+                <div class="col-12">
+                    <div class="prev-block">
+                        <div class="block-image">
+                            <img src="images/contest-img.jpg" alt="">
+                        </div>
+                        <div class="block-coni">
+                            <div class="main-ivo">
+                                <div class="ivo-row">
+                                    <a href="#" class="title-card">
+                                        Design for tehnology company
+                                    </a>
+                                    <a href="" class="icon-card">
+                                        <i class="far fa-star"></i>
+                                    </a>
+                                </div>
+                                <div class="ivo-row text">
+                                    <p class="sub-text">
+                                        Time limit:
+                                        <span>20 day</span>
+                                    </p>
+                                    <p class="sub-text">
+                                        Customer:
+                                        <span>akalikbergenov</span>
+                                    </p>
+                                </div>
+                                <div class="ivo-row">
+                                    <a href="" class="btn-card">Small</a>
+                                    <a href="" class="btn-card">Part garanted</a>
+                                </div>
+                            </div>
+                            <div class="main-price">
+                                <p class="price-t">
+                                    <span>700$</span>
+                                    Price
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-30">
+                <div class="col-12">
+                    <div class="prev-block">
+                        <div class="block-image">
+                            <img src="images/filter-4.png" alt="">
+                        </div>
+                        <div class="block-coni">
+                            <div class="main-ivo">
+                                <div class="ivo-row">
+                                    <a href="#" class="title-card">
+                                        Design for tehnology company
+                                    </a>
+                                    <a href="" class="icon-card">
+                                        <i class="far fa-star activ-2"></i>
+                                    </a>
+                                </div>
+                                <div class="ivo-row text">
+                                    <p class="sub-text">
+                                        Time limit:
+                                        <span>20 day</span>
+                                    </p>
+                                    <p class="sub-text">
+                                        Customer:
+                                        <span>akalikbergenov</span>
+                                    </p>
+                                </div>
+                                <div class="ivo-row">
+                                    <a href="" class="btn-card">Small</a>
+                                    <a href="" class="btn-card">Part garanted</a>
+                                </div>
+                            </div>
+                            <div class="main-price">
+                                <p class="price-t">
+                                    <span>1 800$</span>
+                                    Price
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-p">
+                <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                    <div class="page">
+                        <ul class="page__list">
+                            <li class="page__items"><a href="#" class="page__link">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="page__items"><a href="#" class="page__link activ">1</a></li>
+                            <li class="page__items"><a href="#" class="page__link">2</a></li>
+                            <li class="page__items"><a href="#" class="page__link">3</a></li>
+                            <li class="page__items"><a href="#" class="page__link">...</a></li>
+                            <li class="page__items"><a href="#" class="page__link">24</a></li>
+                            <li class="page__items"><a href="#" class="page__link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-fifth">
+        //= template/footer.html
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

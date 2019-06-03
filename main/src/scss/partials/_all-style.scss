@@ -1519,7 +1519,7 @@
 }
 
 .mb-p {
-    margin-bottom: 15px;
+    margin: 15px 0;
     position: relative;
 
     .selected {
@@ -1688,6 +1688,7 @@
     justify-content: space-between;
     margin: 0 10px;
     cursor: pointer;
+    position: relative;
 
     &:hover {
         border-color: $main-color;
@@ -1696,6 +1697,16 @@
     .design-img {
         border-radius: 50%;
         width: auto !important;
+    }
+    .close-design {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        color: $text_color-3;
+        &:hover {
+            color: $main-color;
+        }
     }
 }
 
@@ -3528,10 +3539,59 @@
 .btn-add {
     @include ct-button(164px, $white-color, #3b3b3b);
 }
-
 .btn-payment {
     @include ct-button(118px, $main-color, $white-color);
     &:hover {
         color: $white-color;
+    }
+}
+
+
+.designe {
+    overflow-x: auto;
+    display: flex;
+    justify-content: space-between;
+    &::-webkit-scrollbar-thumb {
+        background-color:$main-color;
+    }
+    &::-webkit-scrollbar {
+        height: 5px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #f7f7f7;
+    }
+    .info-designe {
+        min-width: 255px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}
+.transaction {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    tbody {
+        width: 100%;
+    }
+    td, th {
+        padding: 12px 15px;
+        border-width: 1px 0 0 1px;
+        border-color: $border-color;
+        border-style: solid;
+    }
+    tr td:last-child {
+        border-right: 1px solid $border-color;
+    }
+    tr:last-child td{
+        border-bottom: 1px solid $border-color;
+    }
+    .transaction-info {
+        display: flex;
+        p {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
     }
 }
