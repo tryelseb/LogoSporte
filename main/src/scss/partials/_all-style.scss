@@ -1120,7 +1120,7 @@
     justify-content: space-between;
     align-items: center;
     padding-left: 80px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 
     &__stp-6 {
         padding: 0;
@@ -1161,12 +1161,13 @@
 
     .r-name {
         margin-right: 0;
-        text-align: center;
+        margin-left: 10px;
+        text-align: left;
 
     }
 
     .wrp-plz {
-        width: 79%;
+        width: 78%;
         position: relative;
         height: 21px;
 
@@ -1484,7 +1485,7 @@
 }
 
 .profile-content {
-    width: 100px;
+    min-width: 115px;
 }
 
 .profile-name {
@@ -1492,7 +1493,10 @@
     font-weight: 600;
     color: $text-color_1;
     font-size: 14px;
-
+    cursor: pointer;
+    &:hover {
+        color: $main-color;
+    }
     @media screen and (max-width: 575px) {
         font-size: 12px;
     }
@@ -1504,25 +1508,13 @@
     align-items: center;
     justify-content: space-between;
 
-    .profile-folowers {
-        display: block;
-        padding-left: 17px;
-        font-size: 12px;
-        position: relative;
-
-        &:after {
-            content: '\f004';
-            position: absolute;
-            font-family: "Font Awesome 5 Free";
-            top: 0;
-            left: 0;
-            color: #fa5120;
-            font-weight: bold;
-        }
-    }
-
     .profile-works {
         font-size: 12px;
+        color: $text-color_3;
+        cursor: pointer;
+        &:hover {
+            color: $main-color;
+        }
     }
 }
 
@@ -1557,7 +1549,26 @@
         }
     }
 }
-
+.profile-folowers {
+    display: block;
+    padding-left: 17px;
+    font-size: 12px;
+    position: relative;
+    color: $text-color_3;
+    cursor: pointer;
+    &:hover {
+        color: $main-color;
+    }
+    &:after {
+        content: '\f004';
+        position: absolute;
+        font-family: "Font Awesome 5 Free";
+        top: 0;
+        left: 0;
+        color: #fa5120;
+        font-weight: bold;
+    }
+}
 .fa-check-circle {
     color: $border-color;
     font-size: 28px;
@@ -1903,53 +1914,6 @@
                 }
             }
 
-            .file-attach {
-                .list-a {
-                    display: flex;
-
-                    @media screen and (max-width: 450px) {
-                        flex-direction: column;
-                    }
-
-                    .items-a {
-                        padding: 1px 25px 2px 10px;
-                        border: 1px solid $border-color;
-                        line-height: 1;
-                        border-radius: 6px;
-                        margin-right: 5px;
-                        position: relative;
-
-                        &:not(:last-child) {
-                            @media screen and (max-width: 450px) {
-                                margin-bottom: 5px;
-                            }
-                        }
-
-                        &:after {
-                            position: absolute;
-                            content: '\f057';
-                            font-family: "Font Awesome 5 Free";
-                            font-size: 10px;
-                            color: $text-color_3;
-                            right: 5px;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            cursor: pointer;
-                        }
-
-                        a {
-                            font-size: 12px;
-                            color: $text-color_3;
-                            line-height: 1;
-
-                            &:hover {
-                                color: $main-color;
-                            }
-                        }
-                    }
-                }
-            }
-
             .attach {
                 min-width: 42px;
                 height: 42px;
@@ -2015,7 +1979,51 @@
         }
     }
 }
+.file-attach {
+    .list-a {
+        display: flex;
 
+        @media screen and (max-width: 450px) {
+            flex-direction: column;
+        }
+
+        .items-a {
+            padding: 1px 25px 2px 10px;
+            border: 1px solid $border-color;
+            line-height: 1;
+            border-radius: 6px;
+            margin-right: 5px;
+            position: relative;
+
+            &:not(:last-child) {
+                @media screen and (max-width: 450px) {
+                    margin-bottom: 5px;
+                }
+            }
+            i {
+                position: absolute;
+                top: 50%;
+                right: 5px;
+                transform: translateY(-50%);
+                font-size: 12px;
+                color: $text-color_3;
+                cursor: pointer;
+                &:hover {
+                    color: #d45f5f;
+                }
+            }
+            a {
+                font-size: 12px;
+                color: $text-color_3;
+                line-height: 1;
+
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
 .message {
     .title-tabs {
         display: flex;
@@ -2435,7 +2443,6 @@
             justify-content: center;
             flex-direction: column;
             cursor: pointer;
-
             &:hover {
                 border-color: $main-color;
 
@@ -2465,8 +2472,7 @@
     }
 
     .prf-block {
-        cursor: pointer;
-
+        
         &:hover .prf-image,
         &:hover .prf-icon,
         &:hover .prf-title,
@@ -2520,6 +2526,9 @@
                     &:hover {
                         border: 1px solid $main-color;
                     }
+                }
+                .image {
+                    border-radius: 6px 6px 0 0;
                 }
             }
             .one-img,
@@ -2595,6 +2604,7 @@
                 line-height: 1.6;
                 color: $text-color_3;
                 display: block;
+                cursor: pointer;
                 &:hover {
                     color: $main-color;
                 }
@@ -2607,8 +2617,8 @@
     }
 
     .icon {
-        width: 30px;
-        height: 30px;
+        width: 31px;
+        height: 31px;
         border-radius: 50%;
         background-color: #fff;
         border: 1px solid $border-color;
@@ -2639,60 +2649,8 @@
     }
 
     /// page 10.1
-    .btn-mywork {
-        @include ct-button(121px, $white-color, $text-color_1);
 
-        @media screen and (max-width: 575px) {
-            display: none;
-        }
-    }
-
-    .btn-mywork-phone {
-        display: none;
-
-        @media screen and (max-width: 575px) {
-            display: block;
-            @include ct-button(45px, $white-color, $text-color_1);
-            font-size: 14px;
-            padding: 10px 10px;
-
-            &:hover {
-                color: $main-color;
-            }
-        }
-    }
-
-    .wrp-content {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-
-        @media screen and (max-width: 575px) {
-            flex-direction: column;
-            align-items: flex-end;
-        }
-
-        .text {
-            font-size: 14px;
-            font-weight: 500;
-            color: $text-color_3;
-            line-height: 1.5;
-
-            @media screen and (max-width: 575px) {
-                margin-bottom: 10px;
-                font-size: 12px;
-            }
-        }
-
-        .wrp-button {
-            display: flex;
-            margin-left: 15px;
-
-            .btn-back {
-                margin-right: 15px;
-            }
-        }
-    }
+    
 
     &--dsg {
         .col-lg-3.col-md-6.col-sm-12 {
@@ -2867,6 +2825,58 @@
         }
     }
 }
+.btn-mywork-phone {
+    display: none;
+
+    @media screen and (max-width: 575px) {
+        display: block;
+        @include ct-button(45px, $white-color, $text-color_1);
+        font-size: 14px;
+        padding: 10px 10px;
+
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+.btn-mywork {
+    @include ct-button(121px, $white-color, $text-color_1);
+
+    @media screen and (max-width: 575px) {
+        display: none;
+    }
+}
+.wrp-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media screen and (max-width: 575px) {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .text {
+        font-size: 14px;
+        font-weight: 500;
+        color: $text-color_3;
+        line-height: 1.5;
+
+        @media screen and (max-width: 575px) {
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+    }
+
+    .wrp-button {
+        display: flex;
+        margin-left: 15px;
+
+        .btn-back {
+            margin-right: 15px;
+        }
+    }
+}
 .wrp-contest {
     font-size: 14px;
     color: $text-color_3;
@@ -2908,7 +2918,10 @@
 
         .btn-work {
             @include ct-button(157px, $white-color, $text-color_3);
-
+            &:hover {
+                background-color: $main-color;
+                color: $white-color;
+            }
             @media screen and (max-width: 1199px) {
                 margin-right: 20px;
             }
@@ -2950,7 +2963,6 @@
     }
 
     &--hr {
-        justify-content: center;
         .icon {
             &:hover {
                 &:hover {
@@ -2998,6 +3010,14 @@
     @media screen and (max-width: 991px) {
         padding: 60px 10px;
     }
+    .file-attach {
+        margin-bottom: 40px;
+    }
+    .list-a {
+        @media screen and (max-width: 450px) {
+           max-width: 130px;
+        }
+    }
 }
 
 .support-form {
@@ -3038,7 +3058,7 @@
 
 .sprt-message {
     min-height: 210px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     resize: none;
     position: relative;
     outline: none;
@@ -3057,7 +3077,7 @@
     justify-content: center;
     border-radius: 50%;
     position: absolute;
-    bottom: 60px;
+    bottom: 30px;
     right: 15px;
 
     &:hover {
@@ -3223,7 +3243,8 @@
     position: absolute;
     right: -13px;
     top: -13px;
-
+    display: block;
+    line-height: 1;
     i {
         font-size: 26px;
         background-color: #fff;
@@ -3338,6 +3359,140 @@
     
 }
 /////////-----------////////////
+///Upload - popap
+.support-popap {
+    max-width: 200px;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    @include border;
+    i {
+        font-size: 26px;
+        color: $text-color_3;
+        margin-bottom: 10px;
+    }
+    .upload-line {
+        position: absolute;
+        background-color: $border-color;
+        bottom: 10%;
+        left: 10%;
+        height: 3px;
+        width: 80%;
+        .progress {
+            width: 60%;
+            height: 100%;
+            background-color: $main-color;
+        }
+    }
+    .sprt-text {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.4;
+        color: $text-color_3;
+        @media screen and (max-width: 575px) {
+            font-size: 12px;
+        }
+    }
+}
+
+/////////-----------////////////
+// popap contest 
+    .popap-contest {
+        position: relative;
+        max-width: 570px;
+        @include border;
+        padding: 60px 100px;
+        @media screen and (max-width: 610px) {
+            padding: 20px;
+        }
+        .title-ntf {
+            margin-bottom: 10px;
+        }
+        .wrp-brief {
+            min-width: 370px;
+            @media screen and (max-width: 610px){
+                min-width: 250px;
+            }
+            .select-brief {
+                background-color: #fff;
+            }
+        }
+        .title-select {
+            font-size: 12px;
+            font-weight: 500;
+            color: #bbb;
+            margin-bottom: 5px;
+            padding-left: 15px;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: -8px;
+                right: -12px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #e6e6e6;
+            }
+        }
+        .btn-payment {
+            background-color: #fff;
+            color: $text-color_1;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    .block-price {
+        text-align: center;
+        margin-bottom: 25px;
+        .price {
+            color:$text-color_3;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+            @media screen and (max-width: 610px) {
+                font-size: 12px;
+            }
+            span {
+                font-size: 36px;
+                font-weight: 700;
+                color: $main-color;
+            }
+        }
+    }
+    .price {
+        &__items {
+            display: flex;
+            justify-content: space-between;
+            span {
+                font-size: 14px;
+                font-weight: 500;
+                color: $text-color_3;
+                line-height: 1;
+                display: block;
+                white-space: nowrap;
+                &:nth-child(2){
+                    width: 65%;
+                    border-bottom: 2px dotted $border-color;
+                }
+                &:nth-child(1) {
+                }
+            }
+            margin-bottom: 10px;
+        }
+    }
+    .total-text {
+        color: $text-color_2;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: right;
+        span {
+            color: $main-color;
+        }
+    }
+/////
 // Button
 .btn-cansel,.btn-110w {
     @include btn-110($white-color);

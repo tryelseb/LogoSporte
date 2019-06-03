@@ -52,12 +52,28 @@
         border-radius: 6px;
     }
     .close-btn {
-        background-color: #fff;
+        background-color: transparent;
+        border: 0;
         right: -15px;
         top: -15px;
         @media screen and (max-width: 450px) {
             right: -5px;
             top: -5px;
+        }
+        i {
+            font-size: 32px;
+            color: $border-color;
+            display: block;
+            text-align: center;
+            line-height: 32px;
+            background-color: #fff;
+            border-radius: 50%;
+
+            @media screen and (max-width: 450px) {
+                font-size: 21px;
+                line-height: 19px;
+            }
+
         }
     }
 }
@@ -66,13 +82,10 @@
     position: absolute;
     right: 15px;
     top: 15px;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     border: 1px solid $border-color;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     @media screen and (max-width: 450px) {
         width: 20px;
         height: 20px;
@@ -86,8 +99,12 @@
     i {
         font-size: 13px;
         color: $border-color;
+        display: block;
+        text-align: center;
+        line-height: 31px;
         @media screen and (max-width: 450px) {
         font-size: 10px;
+        line-height: 19px;
     }
     }
 }
@@ -95,15 +112,12 @@
 .slide-left,
 .slide-right {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     top: 50%;
     transform: translateY(-50%);
     border: 1px solid #ffffff;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
      @media screen and (max-width: 450px) {
         width: 20px;
         height: 20px;
@@ -117,8 +131,12 @@
     i {
         font-size: 13px;
         color: #ffffff;
+        display: block;
+        text-align: center;
+        line-height: 31px;
          @media screen and (max-width: 450px) {
         font-size: 10px;
+        line-height: 19px;
     }
     }
 }
@@ -138,7 +156,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: linear-gradient(180deg, rgba(247, 247, 247, 0.1) 0%, #7c7c7c 100%);
+    background-image: linear-gradient(180deg, rgba(247, 247, 247, 0.1) 0%, rgba(247, 247, 247, 0.2) 100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -158,6 +176,7 @@
 }
 .like {
     margin-right: 20px;
+    color: #fff;
     @media screen and (max-width: 450px) {
         margin-right: 10px;
         text-align: center;
@@ -202,33 +221,33 @@
 
 .cancel-btn {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    border: 1px solid $border-color;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
+    width: 32px;
+    height: 32px;
     right: -15px;
     top: -15px;
     @media screen and (max-width: 900px) {
         right: 15px;
-    top: 15px;;
+        top: 15px;
     }
     @media screen and (max-width: 450px) {
        width: 20px;
-    height: 20px;
-    }
-    &:hover {
-        border-color: $main-color;
+        height: 20px;
     }
     &:hover i{
         color: $main-color;
     }
     i {
-        font-size: 13px;
+        font-size: 32px;
         color:$border-color;
+        display: block;
+        text-align: center;
+        line-height: 32px;
+        background-color: #fff;
+        border-radius: 50%;
+         @media screen and (max-width: 450px) {
+             font-size: 21px;
+             line-height: 19px;
+         }
        
     }
 }
@@ -246,12 +265,27 @@
 }
 .user-img {
     margin-right: 10px;
+    border: 2px solid transparent;
+    transition: all .2s;
 }
 .creator-info {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 10px;
+    cursor: pointer;
+    max-width: 180px;
+    &:hover {
+        .user-img {
+            border: 2px solid $main-color;
+            border-radius: 50%;
+            transition: all .2s;
+        }
+        .user-name {
+            color: $main-color;
+             transition: all .2s;
+        }
+    }
 }
 .user-text {
     display: flex;
@@ -263,6 +297,7 @@
         color: $text-color_2;
         line-height: 1;
         margin-bottom: 4px;
+         transition: all .2s;
         @media screen and (max-width: 575px) {
             font-size: 12px;
         }
@@ -297,7 +332,9 @@
         color: $text-color_2;
     }
 }
-.test {
-     padding: 15px;
-     background-color: green;
+.picture {
+    .wrp-slider {
+        max-width: 1110px;
+            width: auto;
+    }
 }

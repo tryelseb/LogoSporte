@@ -118,7 +118,10 @@
             line-height: 1.5;
             color: $main-color;
         }
-
+        .wrp-message {
+            display: block;
+            line-height: 1;
+        }
         .fa-envelope {
             color: $text-color_3;
             font-size: 18px;

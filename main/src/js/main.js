@@ -1,5 +1,6 @@
 //= ../../bower_components/jquery/dist/jquery.js
 //= partials/owl.carousel.min.js
+//= partials/masonry.min.js
 
 
 // // Menu
@@ -20,7 +21,7 @@ $("#navToggle").click(function () {
 
 
 //chat
-if($("div").is(".file-attach")) {
+if ($("div").is(".file-attach")) {
   console.log("sadas");
   $(".chat-all").addClass("all-mob");
   $(".chat-sct").addClass("sct-mob");
@@ -28,6 +29,7 @@ if($("div").is(".file-attach")) {
   $(".form-messege").css("margin-bottom", "5px");
   console.log("sadas");
 }
+
 
 
 //Go to top
@@ -42,13 +44,20 @@ jQuery(document).ready(function ($) {
   });
 
   function show_scrollTop() {
-    ($(window).scrollTop() > 300) ? $scrollTop.fadeIn(600) : $scrollTop.fadeOut(600);
+    ($(window).scrollTop() > 300) ? $scrollTop.fadeIn(600): $scrollTop.fadeOut(600);
   }
   $(window).scroll(function () {
     show_scrollTop();
   });
   show_scrollTop();
 });
+////
+$('.masonry-container').masonry({
+  // options
+  itemSelector: '.masonry-item',
+  columnWidth: '.masonry-item'
+});
+////
 // Slider
 
 $(document).ready(function () {
@@ -133,7 +142,7 @@ $(document).ready(function () {
           }
         }
       });
-      
+
     }
   }
 
@@ -145,11 +154,14 @@ $(document).ready(function () {
   });
   $(window).on('load resize', windowSize);
 });
+
+
 // list 
 function test() {
   var ele = document.getElementsByClassName('r1');
   for (var i = 0; i < ele.length; i++) {
     console.log(i);
+
     function fun1(i) {
       console.log(i);
       var rng = document.getElementsByClassName('r1')[i];
@@ -177,4 +189,14 @@ function load() {
 }
 load();
 
-///tootip
+function contest() {
+  var contest_list = document.getElementById('cnav__list');
+  contest_list.classList.toggle('mob-activ');
+  contest_list.animate([{
+      opacity: '0'
+    },
+    {
+      opacity: '1'
+    },
+  ], 300);
+}

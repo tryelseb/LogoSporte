@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>LogoSporte</title>
+    <link data-csp="header-favicon" rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-9 col-md-8 col-sm-4">
+    			<div class="navBurger" role="navigation" id="navToggle"></div>
+    				<div id="test" class="overlay ">
+    					<div class="overlayMenu my-d-flex">
+    						<div class="logo">
+    							<a href="" class="logo__link">
+    								<img src="images/logo.png" alt="LogoSporte" class="logo__img">
+    							</a>
+    						</div>
+    						<nav class="menu">
+    							<ul class="menu__list">
+    								<li class="menu__items">
+    									<a href="" class="menu__link">works</a>
+    								</li>
+    								<li class="menu__items">
+    									<a href="" class="menu__link">designers</a>
+    								</li>
+    								<li class="menu__items">
+    									<a href="" class="menu__link">contests</a>
+    								</li>
+    							</ul>
+    						</nav>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-lg-3 col-md-4 col-sm-8 d-flex justify-content-end">
+    				<div class="wrp-const">
+    					<span class="const__prise">
+    						120$
+    					</span>
+    					<a href="#" class="wrp-message">
+    					<i class="fas fa-envelope"></i>
+    					</a>
+    					<a href="#" class="wrp-ring">
+    						<div class="bg-color">
+    							<span>4</span>
+    						</div>
+    						<i class="far fa-bell"></i>
+    					</a>
+    					<div class="wrp-img">
+    						<img src="images/user-icon.png" alt="user icon">
+    					</div>
+    					<div class="info">
+    						<span class="user-name">
+    							Adil
+    						</span>
+    						<i class="fas fa-chevron-down"></i>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </header>
+    <section class="profile contest-info">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-12">
+                    <div class="wrp-contest">
+                        <div class="title">
+                            <h1>My contest</h1>
+                        </div>
+                        <div class="contest-list">
+                            <button class="btn-work">Add new contest</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-30">
+                <div class="col col-lg-12">
+                    <div class="block-navigate">
+                        <ul class="list">
+                            <li class="list__items">
+                                <a href="" class="list__link">all</a>
+                            </li>
+                            <li class="list__items">
+                                <a href="" class="list__link activ">finished</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row prf-hack pos-r">
+                <a href="#" class="mob-btn" id="mob-btn" onclick="contest()">
+                    <i class="fas fa-ellipsis-v"></i>
+                </a>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="wrp-works">
+                        <a href="#" class="works">Design for tehnology company</a>
+                        <ul class="cinfo__list">
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">Round 1</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">2 days to next step</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">451 design concept</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">45 logos selected</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 pos-s">
+                    <ul class="cnav__list" id="cnav__list">
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Promote to top</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Transaction</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Cancel project</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="mob__link">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row mb prf-hack pos-r">
+                <a href="#" class="mob-btn" id="mob-btn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </a>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="wrp-works">
+                        <a href="#" class="works">Design for travel company</a>
+                        <ul class="cinfo__list">
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">Round 1</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">1 days to next step</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">0 design concept</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">45 logos selected</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 pos-s">
+                    <ul class="cnav__list">
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Cancel project</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="btn-payment">Payment</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="mob__link">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row prf-hack mb-30 pos-r">
+                <a href="#" class="mob-btn" id="mob-btn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </a>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="wrp-works">
+                        <a href="#" class="works">Design for travel company</a>
+                        <ul class="cinfo__list">
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">Round 2</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">1 days to next step</span>
+                            </li>
+                            <li class="cinfo__items">
+                                <span class="cinfo__text">451 design concept</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 pos-s">
+                    <ul class="cnav__list">
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Promote to top</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Transaction</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">Cancel project</a>
+                        </li>
+                        <li class="cnav__items">
+                            <a href="" class="cnav__link">
+                                <i class="fas fa-chevron-up"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="mob__link">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="wrp-step">
+                        <div class="step activ"><span class="step-text">Brief</span></div>
+                        <div class="step"><span class="step-text">Round 1</span></div>
+                        <div class="step"><span class="step-text">Round 2</span></div>
+                        <div class="step"><span class="step-text">Winner</span></div>
+                        <div class="step"><span class="step-text">Identyty pack</span></div>
+                    </div>
+                    <div class="wrp-mob-step">
+                        <button class="nav left">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="mob-step"><span>1/6 Price</span></div>
+                        <div class="mob-step"><span>2/6 Type</span></div>
+                        <div class="mob-step"><span>3/6 Color</span></div>
+                        <div class="mob-step"><span>4/6 Style</span></div>
+                        <div class="mob-step activ"><span>5/6 Brief</span></div>
+                        <button class="nav right">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <span class="cnst-subtitle">
+                        About company
+                    </span>
+                </div>
+            </div>
+            <div class="row mb-30">
+                <div class="col col-lg-5 col-md-6 col-sm-12">
+                    <div class="about-company">
+                    <ul class="cmp__title">
+                        <li class="cmp__items">name</li>
+                        <li class="cmp__items">slogan</li>
+                        <li class="cmp__items">people</li>
+                        <li class="cmp__items">industry</li>
+                    </ul>
+                    <ul class="info__title">
+                        <li class="info__items">Apple Inc.</li>
+                        <li class="info__items">Think Different</li>
+                        <li class="info__items">54 000 </li>
+                        <li class="info__items">Technologies</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-3 col-md-3 col-sm-6">
+                    <span class="cnst-subtitle">
+                        Information
+                    </span>
+                </div>
+                <div class="col col-lg-2 col-md-3 col-sm-6">
+                    <div class="wrp-brief">
+                        <div class="select-wrapper">
+                            <i class="fas fa-angle-down"></i>
+                            <select name="format" class="select-brief">
+                                <option>English</option>
+                                <option>Russian</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-7 col-md-10 col-sm-12">
+                    <ul class="infc__list">
+                        <li class="infc__items">
+                            <p class="infc-questions">
+                                What logotype you
+                                like to get?
+                            </p>
+                            <p class="infc-answer">
+                                I need an innovative idea and at the same time
+                                very creative and minimalistic. You need to use
+                                the name of the company, beat it and beautifully
+                                decorate it.
+                            </p>
+                        </li>
+                        <li class="infc__items">
+                            <p class="infc-questions">
+                                What you company
+                                do?
+                            </p>
+                            <p class="infc-answer">
+                                My company is a network of sepermarkets with
+                                an innovative approach both to the business itself
+                                and to the way we provide our services.
+                            </p>
+                        </li>
+                        <li class="infc__items">
+                            <p class="infc-questions">
+                                Any features of your
+                                company?
+                            </p>
+                            <p class="infc-answer">
+                                For us there is only one mission - this is always
+                                the sale of quality, fresh food in the fastest time
+                                possible for our client.
+                            </p>
+                        </li>
+                        <li class="infc__items">
+                            <p class="infc-questions">
+                                What the adventages
+                                of your company?
+                            </p>
+                            <p class="infc-answer">
+                                We use AI to sell products, surveillance systems,
+                                while we do not have any staff in supermarkets.
+                                We can pay for purchases bypassing cashiers,
+                                or some kind of staff. All purchases are paid from
+                                your smartphone or your credit card. It's simple.
+                            </p>
+                        </li>
+                        <li class="infc__items">
+                            <p class="infc-questions">
+                                What logotype you
+                                like to get?
+                            </p>
+                            <p class="infc-answer">
+                                I need an innovative idea and at the same time
+                                very creative and minimalistic. You need to use
+                                the name of the company, beat it and beautifully
+                                decorate it.
+                            </p>
+                        </li>
+                         <li class="infc__items">
+                             <p class="infc-questions">
+                                 What logotype you
+                                 don't like?
+                             </p>
+                             <p class="infc-answer">
+                                 Template logos that do not have taste, in which
+                                 there is no creative or they do not correspond
+                                 to the theme of supermarkets
+                             </p>
+                         </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <span class="cnst-subtitle">
+                        Style
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="my-row">
+                        <span class="r-title">Economy</span>
+                        <div class="wrp-plz">
+                            <input type="range" class="r1" oninput="test()" value="0">
+                            <div class="color" style="width: 0%;"></div>
+                            <input type="text" class="i1" value="0%" readonly="" style="left: 1%;">
+                            <input type="text" class="i2" value="0%" readonly="">
+                        </div>
+                        <span class="r-name">Rick</span>
+                    </div>
+                    <div class="my-row">
+                        <span class="r-title">Female</span>
+                        <div class="wrp-plz">
+                            <input type="range" class="r1" oninput="test()" value="0">
+                            <div class="color" style="width: 0%;"></div>
+                            <input type="text" class="i1" value="0%" readonly="" style="left: 1%;">
+                            <input type="text" class="i2" value="0%" readonly="">
+                        </div>
+                        <span class="r-name">Male</span>
+                    </div>
+                    <div class="my-row">
+                        <span class="r-title">Young</span>
+                        <div class="wrp-plz">
+                            <input type="range" class="r1" oninput="test()" value="0">
+                            <div class="color" style="width: 0%;"></div>
+                            <input type="text" class="i1" value="0%" readonly="" style="left: 1%;">
+                            <input type="text" class="i2" value="0%" readonly="">
+                        </div>
+                        <span class="r-name">Maturity</span>
+                    </div>
+                    <div class="my-row">
+                        <span class="r-title">Moder</span>
+                        <div class="wrp-plz">
+                            <input type="range" class="r1" oninput="test()" value="0">
+                            <div class="color" style="width: 0%;"></div>
+                            <input type="text" class="i1" value="0%" readonly="" style="left: 1%;">
+                            <input type="text" class="i2" value="0%" readonly="">
+                        </div>
+                        <span class="r-name">Classic</span>
+                    </div>
+                    <div class="my-row">
+                        <span class="r-title">Playfulness</span>
+                        <div class="wrp-plz">
+                            <input type="range" class="r1" oninput="test()" value="0">
+                            <div class="color" style="width: 0%;"></div>
+                            <input type="text" class="i1" value="0%" readonly="" style="left: 1%;">
+                            <input type="text" class="i2" value="0%" readonly="">
+                        </div>
+                        <span class="r-name">Gravity</span>
+                    </div>
+                    <div class="my-row">
+                        <span class="r-title">Subtlety</span>
+                        <div class="wrp-plz">
+                            <input type="range" class="r1" oninput="test()" value="0">
+                            <div class="color" style="width: 0%;"></div>
+                            <input type="text" class="i1" value="0%" readonly="" style="left: 1%;">
+                            <input type="text" class="i2" value="0%" readonly="">
+                        </div>
+                        <span class="r-name">Obviousness</span>
+                    </div>
+                    <div class="my-row">
+                        <span class="r-title">Brevity</span>
+                        <div class="wrp-plz">
+                            <input type="range" class="r1" oninput="test()" value="0">
+                            <div class="color" style="width: 0%;"></div>
+                            <input type="text" class="i1" value="0%" readonly="" style="left: 1%;">
+                            <input type="text" class="i2" value="0%" readonly="">
+                        </div>
+                        <span class="r-name">Agressiveness</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <span class="cnst-subtitle">
+                        Type
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="#" class="type-block"></a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="#" class="type-block"></a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="#" class="type-block"></a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="#" class="type-block"></a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="#" class="type-block"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <span class="cnst-subtitle">
+                        Color
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="#" class="color-block cl-1">
+                        <i class="fas fa-crosshairs"></i>
+                        <span>#4ac420</span>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="#" class="color-block cl-2">
+                        <i class="fas fa-crosshairs"></i>
+                        <span>#1a8bfa</span>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="#" class="color-block cl-3">
+                        <i class="fas fa-crosshairs"></i>
+                        <span>#ffad17</span>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="#" class="color-block cl-4">
+                        <i class="fas fa-crosshairs"></i>
+                        <span>#fa5120</span>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <span class="cnst-subtitle">
+                        Addition files
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="#" class="upload-block">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>Name file.doc</span>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="#" class="upload-block">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>Name file.pdf</span>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="#" class="upload-block">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>Name file.ai</span>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <span class="cnst-subtitle">
+                        Corporate identity
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 offset-lg-0 col-md-5 offset-md-1 col-sm-12">
+                    <ul class="inden__list">
+                        <li class="inden__items">
+                            Guideline
+                        </li>
+                        <li class="inden__items">
+                            Examples of using your logo
+                        </li>
+                        <li class="inden__items">
+                            Color palette for company
+                        </li>
+                        <li class="inden__items">
+                            Map of branded fonts
+                        </li>
+                    </ul>
+                    <ul class="inden__list">
+                        <li class="inden__items">
+                            Standart brand identity
+                        </li>
+                        <li class="inden__items">
+                            Design of letterhead
+                        </li>
+                        <li class="inden__items">
+                            Corporate business card design
+                        </li>
+                        <li class="inden__items">
+                            Pattern
+                        </li>
+                        <li class="inden__items">
+                            Favicon for the site
+                        </li>
+                        <li class="inden__items">
+                            Design of 3 social networks to choose from
+                        </li>
+                    </ul>
+                    <ul class="inden__list">
+                        <li class="inden__items">
+                            Attributes for the company
+                        </li>
+                        <li class="inden__items">
+                            Model of company labels
+                        </li>
+                        <li class="inden__items">
+                            Icon layout with your logo
+                        </li>
+                        <li class="inden__items">
+                            Model T-shirt
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 offset-lg-1 col-md-5 offset-md-1 col-sm-12">
+                    <ul class="inden__list">
+                        <li class="inden__items">
+                            Non-standard branded media
+                        </li>
+                        <li class="inden__items">
+                            5 individual carriers
+                        </li>
+                    </ul>
+                    <ul class="inden__list">
+                        <li class="inden__items">
+                            Final files
+                        </li>
+                        <li class="inden__items">
+                            Layered vectors (EPS, AI)
+                        </li>
+                        <li class="inden__items">
+                            Screen quality (PNG, JPEG, PDF)
+                        </li>
+                        <li class="inden__items">
+                            Preview of product
+                        </li>
+                         <li class="inden__items">
+                             Fonts <span>
+                                 (If you want to use paid fonts - provide
+                                 the client's documents, about the purchased
+                                 font and confirm its consent)
+                             </span>
+                         </li>
+                         <li class="inden__items">
+                             Text in logos should be converted to outlines.
+                         </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="section-fifth">
+        <footer class="main-footer">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col offset-lg-1 col-lg-10 col-md-12 col-sm-12 my-d-flex">
+        				<div class="blk1">
+        					<a href="" class="logo__link">
+        						<img src="images/logo.png" alt="LogoSporte" class="logo__img">
+        					</a>
+        					<span class="blk1-text">
+        						We took all the best from
+        					</span>
+        				</div>
+        				<div class="wrp-sub-block">
+        					<div class="blk2">
+        						<div class="list-title">
+        							<h3>Read</h3>
+        						</div>
+        						<ul class="ft-list">
+        							<li class="ft-list__items">
+        								<a href="" class="ft-list__link">Use of terms</a>
+        							</li>
+        							<li class="ft-list__items">
+        								<a href="" class="ft-list__link">About our company</a>
+        							</li>
+        							<li class="ft-list__items">
+        								<a href="" class="ft-list__link">Press</a>
+        							</li>
+        						</ul>
+        					</div>
+        					<div class="blk3">
+        						<div class="list-title">
+        							<h3>Info</h3>
+        						</div>
+        						<ul class="ft-list">
+        							<li class="ft-list__items">
+        								<a href="" class="ft-list__link">News</a>
+        							</li>
+        							<li class="ft-list__items">
+        								<a href="" class="ft-list__link">FAQ</a>
+        							</li>
+        						</ul>
+        					</div>
+        				</div>
+        				<div class="wrp-sub-block">
+        					<div class="blk4">
+        						<div class="list-title">
+        							<h3>Social</h3>
+        						</div>
+        						<ul class="mob-list">
+        							<li class="mob-list__items">
+        								<a href="" class="mob-list__link">
+        									<i class="fab fa-facebook-f"></i>
+        								</a>
+        							</li>
+        							<li class="mob-list__items">
+        								<a href="" class="mob-list__link">
+        									<i class="fab fa-twitter-square"></i>
+        								</a>
+        							</li>
+        							<li class="mob-list__items">
+        								<a href="" class="mob-list__link">
+        									<i class="fab fa-instagram"></i>
+        								</a>
+        							</li>
+        							<li class="mob-list__items">
+        								<a href="" class="mob-list__link">
+        									<i class="fab fa-viber"></i>
+        								</a>
+        							</li>
+        							<li class="mob-list__items">
+        								<a href="" class="mob-list__link">
+        									<i class="fab fa-telegram-plane"></i>
+        								</a>
+        							</li>
+        						</ul>
+        						<ul class="ft-list">
+        							<li class="ft-list__items">
+        								<a href="" class="ft-list__link">Facebook</a>
+        							</li>
+        							<li class="ft-list__items">
+        								<a href="" class="ft-list__link">Twitter</a>
+        							</li>
+        							<li class="ft-list__items">
+        								<a href="" class="ft-list__link">Instagram</a>
+        							</li>
+        							<li class="ft-list__items">
+        								<a href="" class="ft-list__link">Viber</a>
+        							</li>
+        							<li class="ft-list__items">
+        								<a href="" class="ft-list__link">Telegram</a>
+        							</li>
+        						</ul>
+        					</div>
+        					<div class="blk5">
+        						<div class="list-title">
+        							<h3>Contact</h3>
+        						</div>
+        						<div class="wrp-mail">
+        							<i class="fas fa-envelope"></i>
+        							<a href="mailto:mail@logosporte.com" class="link-email">mail@logosporte.com</a>
+        						</div>
+        						<div class="wrp-selected">
+        							<div class="select-box">
+        								<div class="select-box__current" tabindex="1">
+        									<div class="select-box__value">
+        										<input class="select-box__input" type="radio" id="0" value="1" name="Ben"
+        											checked="checked" />
+        										<p class="select-box__input-text">English</p>
+        									</div>
+        									<div class="select-box__value">
+        										<input class="select-box__input" type="radio" id="1" value="2" name="Ben"
+        											checked="checked" />
+        										<p class="select-box__input-text">Russian</p>
+        									</div><img class="select-box__icon"
+        										src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon"
+        										aria-hidden="true" />
+        								</div>
+        								<ul class="select-box__list">
+        									<li>
+        										<label class="select-box__option" for="0"
+        											aria-hidden="aria-hidden">English</label>
+        									</li>
+        									<li>
+        										<label class="select-box__option" for="1"
+        											aria-hidden="aria-hidden">Russian</label>
+        									</li>
+        								</ul>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="container-fluid">
+        		<div class="row">
+        			<div class="col col-12">
+        				<div class="cop-text">
+        					<span>Made in Ukraine</span>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </footer>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
