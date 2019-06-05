@@ -3530,6 +3530,37 @@
         }
     }
 ///
+.brief-popup {
+    .text-popup {
+        font-size: 14px;
+        font-weight: 500;
+        color: $text-color_2;
+        margin-bottom: 30px;
+        text-align: center;
+        span{
+            color: $main-color;
+            cursor: pointer;
+        }
+    }
+    .wrp-example {
+        position: absolute;
+        border: 1px solid $main-color;
+        padding: 15px;
+        border-radius: 6px;
+        top: 130px;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #fff;
+        display: none;
+        cursor: pointer;
+        &.open {
+            display: block;
+        }
+    }
+    .block-upload {
+        text-align: center;
+    }
+}
 // Button
 .btn-cansel,.btn-110w {
     @include btn-110($white-color);
@@ -3777,5 +3808,117 @@
             display: flex;
             justify-content: flex-end;
         }
+    }
+}
+.terms {
+    padding: 60px 0;
+    .terms-text {
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.8;
+        color: $text-color_2;
+        @media screen and (max-width: 575px) {
+            font-size: 12px;
+        }
+        &:not(:last-child) {
+            
+        }
+    }
+}
+.aboutc-text {
+    margin-bottom: 30px;
+    color: $text-color_2;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.8;
+    @media screen and (max-width: 575px) {
+        font-size: 12px;
+    }
+}
+.wrp-founders {
+    margin-bottom: 10px;
+    &:hover {
+        img {
+            border-color: $main-color;
+            cursor: pointer;
+        }
+        .name-founders {
+            color: $main-color;
+        }
+    }
+    img {
+        border-radius: 50%;
+        margin-right: 15px;
+        border: 2px solid transparent;
+    }
+    .name-founders {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.5;
+        color: #444444;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+    .prf-founders {
+        text-transform: capitalize;
+        font-size: 14px;
+        line-height: 2;
+        color: #bbbbbb;
+        font-weight: 500;
+    }
+    display: flex;
+    align-items: center;
+    
+}
+.company {
+    .wrp-brief {
+        margin-bottom: 0;
+        @media screen and (max-width: 767px){
+            margin-bottom: 30px;
+        }
+    }
+    .faq {
+        &__items {
+            margin-bottom: 30px;
+            position: relative;
+        }
+        &__link {
+            display: block;
+            background-color: #fff;
+            @include border;
+            padding: 20px 38px 20px 20px;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.2;
+            color: $text-color_2;
+            @media screen and (max-width: 575px) {
+
+            }
+            &:hover {
+                border-color: $main-color;
+                color: $main-color;
+            }
+        }
+        &__icon {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            pointer-events: none;
+            i {
+                color: $text-color_3;
+                font-size: 20px;
+            }
+        }
+        &__text {
+            padding-top: 25px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.8;
+            color: $text-color_2 !important;
+        }
+    }
+    .faq__link:hover + .faq__icon i{
+        color: $main-color;
     }
 }

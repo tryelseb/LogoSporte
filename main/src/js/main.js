@@ -20,6 +20,12 @@ $("#navToggle").click(function () {
 });
 
 
+$("#btn-brief").click(function () {
+  $(".wrp-example").toggleClass('open');
+});
+
+  
+
 //chat
 if ($("div").is(".file-attach")) {
   console.log("sadas");
@@ -200,3 +206,4 @@ function contest() {
     },
   ], 300);
 }
+
