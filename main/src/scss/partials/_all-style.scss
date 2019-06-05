@@ -3726,6 +3726,7 @@
     color: $text-color_2;
     font-weight: 700;
     line-height: 1.5;
+    white-space: nowrap;
     span {
         color: $main-color;
         @media screen and (max-width: 575px) {
@@ -3771,6 +3772,7 @@
         width: calc(100% / 4);
     }
     .df {
+        margin-bottom: 30px;
         @media screen and (min-width: 992px) {
             display: flex;
             justify-content: flex-end;
