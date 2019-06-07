@@ -9,13 +9,55 @@
     <link data-csp="header-favicon" rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
+    <!-- SVG sprite-->
+    <div class="sprite" style="display:none;">
+        <svg aria-hidden="true" id="icon-plus" focusable="false" data-prefix="fas" data-icon="plus"
+            class="svg-inline--fa fa-plus fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+                d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+            </path>
+        </svg>
+        <svg aria-hidden="true" id="icon-heart" focusable="false" data-prefix="fas" data-icon="heart"
+            class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+                d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+            </path>
+        </svg>
+        <svg aria-hidden="true" id="icon-star" focusable="false" data-prefix="fas" data-icon="star"
+            class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path 
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+            </path>
+        </svg>
+        <svg aria-hidden="true" id="icon-right" focusable="false" data-prefix="fas" data-icon="chevron-right"
+            class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512">
+            <path
+                d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+            </path>
+        </svg>
+        <svg aria-hidden="true" id="icon-pencil" focusable="false" data-prefix="fas" data-icon="pencil-alt"
+            class="svg-inline--fa fa-pencil-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
+            <path 
+                d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z">
+            </path>
+        </svg>
+        <svg aria-hidden="true" id="icon-times" focusable="false" data-prefix="fas" data-icon="times"
+            class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+            <path 
+                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+            </path>
+        </svg>
+    </div>
+    <!---->
     <header class="main-header">
     	<div class="container">
     		<div class="row">
@@ -299,7 +341,7 @@
                         </div>
                     </div>
                 </div>
-            </div>            
+            </div>
             <div class="row mb-15 mt-15">
                 <div class="col-12 d-flex align-items-center justify-content-start">
                     <img src="images/profile-icon.png" alt="" class="profile-img">
@@ -342,27 +384,14 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="block-contest">
-                        <a href="#" class="block-img">
-                            <img src="images/contest-example.jpg" alt="">
-                        </a>
-                        <div class="block-down">
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -376,10 +405,35 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -413,49 +467,31 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
-                                </a>
-                            </div>
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-lg-3 col-md-6 col-sm-12">
-                    <div class="block-contest">
-                        <a href="#" class="block-img">
-                            <img src="images/contest-example.jpg" alt="">
-                        </a>
-                        <div class="block-down">
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -469,21 +505,31 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -497,21 +543,69 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -630,49 +724,31 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
-                                </a>
-                            </div>
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-lg-3 col-md-6 col-sm-12">
-                    <div class="block-contest">
-                        <a href="#" class="block-img">
-                            <img src="images/contest-example.jpg" alt="">
-                        </a>
-                        <div class="block-down">
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -686,49 +762,31 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
-                                </a>
-                            </div>
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-lg-3 col-md-6 col-sm-12">
-                    <div class="block-contest">
-                        <a href="#" class="block-img">
-                            <img src="images/contest-example.jpg" alt="">
-                        </a>
-                        <div class="block-down">
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -742,49 +800,31 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
-                                </a>
-                            </div>
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-lg-3 col-md-6 col-sm-12">
-                    <div class="block-contest">
-                        <a href="#" class="block-img">
-                            <img src="images/contest-example.jpg" alt="">
-                        </a>
-                        <div class="block-down">
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -798,21 +838,31 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -826,21 +876,145 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -890,9 +1064,9 @@
                             </a>
                         </li>
                     </ul>
-                     <a href="#" class="mob__link">
-                         <i class="fas fa-chevron-down"></i>
-                     </a>
+                    <a href="#" class="mob__link">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
                 </div>
             </div>
             <div class="row mb prf-hack pos-r">
@@ -936,9 +1110,9 @@
                             </a>
                         </li>
                     </ul>
-                     <a href="#" class="mob__link">
-                         <i class="fas fa-chevron-down"></i>
-                     </a>
+                    <a href="#" class="mob__link">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
                 </div>
             </div>
             <div class="row">
@@ -996,49 +1170,31 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
-                                </a>
-                            </div>
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-lg-3 col-md-6 col-sm-12">
-                    <div class="block-contest">
-                        <a href="#" class="block-img">
-                            <img src="images/contest-example.jpg" alt="">
-                        </a>
-                        <div class="block-down">
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -1052,49 +1208,31 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
-                                </a>
-                            </div>
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-lg-3 col-md-6 col-sm-12">
-                    <div class="block-contest">
-                        <a href="#" class="block-img">
-                            <img src="images/contest-example.jpg" alt="">
-                        </a>
-                        <div class="block-down">
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -1108,49 +1246,31 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
-                                </a>
-                            </div>
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-lg-3 col-md-6 col-sm-12">
-                    <div class="block-contest">
-                        <a href="#" class="block-img">
-                            <img src="images/contest-example.jpg" alt="">
-                        </a>
-                        <div class="block-down">
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
-                                </a>
-                                <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -1164,21 +1284,31 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -1192,21 +1322,145 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-heart"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-star"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <div class="block-contest">
+                        <a href="#" class="block-img">
+                            <img src="images/contest-example.jpg" alt="">
+                        </a>
+                        <div class="block-down">
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="cswrp-link">
+                                <a href="" class="btn-link">
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -1276,9 +1530,9 @@
                             </a>
                         </li>
                     </ul>
-                     <a href="#" class="mob__link">
-                         <i class="fas fa-chevron-down"></i>
-                     </a>
+                    <a href="#" class="mob__link">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
                 </div>
             </div>
             <div class="row">
@@ -1345,19 +1599,25 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link activ">
                                     <i class="fas fa-folder"></i>
                                     <span class="activ">1</span>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -1387,18 +1647,24 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
                                     <i class="fas fa-folder"></i>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -1428,18 +1694,24 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
                                     <i class="fas fa-folder"></i>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -1469,18 +1741,24 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
                                     <i class="fas fa-folder"></i>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -1512,19 +1790,25 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link activ">
                                     <i class="fas fa-folder"></i>
                                     <span class="activ">1</span>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -1554,18 +1838,24 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
                                     <i class="fas fa-folder"></i>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -1595,18 +1885,24 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
                                     <i class="fas fa-folder"></i>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -1636,18 +1932,24 @@
                         <div class="block-down">
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-right"></use>
+                                    </svg>
                                 </a>
                                 <a href="" class="btn-link">
                                     <i class="fas fa-folder"></i>
                                 </a>
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <svg class="inline-svg-icon">
+                                        <use xlink:href="#icon-pencil"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="cswrp-link">
                                 <a href="" class="btn-link">
-                                    <i class="fas fa-times"></i>
+                                   <svg class="inline-svg-icon">
+                                       <use xlink:href="#icon-times"></use>
+                                   </svg>
                                 </a>
                             </div>
                         </div>
@@ -1717,9 +2019,9 @@
                             </a>
                         </li>
                     </ul>
-                     <a href="#" class="mob__link">
-                         <i class="fas fa-chevron-down"></i>
-                     </a>
+                    <a href="#" class="mob__link">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
                 </div>
             </div>
             <div class="row">
@@ -1779,11 +2081,11 @@
                             </a>
                         </div>
                         <div class="block-down">
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                   <i class="fas fa-plus"></i>
-                                </a>
-                            </div>
+                            <a href="" class="btn-link">
+                                <svg class="inline-svg-icon">
+                                    <use xlink:href="#icon-plus"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1804,11 +2106,11 @@
                             </a>
                         </div>
                         <div class="block-down">
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                   <i class="fas fa-plus"></i>
-                                </a>
-                            </div>
+                            <a href="" class="btn-link">
+                                <svg class="inline-svg-icon">
+                                    <use xlink:href="#icon-plus"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1829,11 +2131,11 @@
                             </a>
                         </div>
                         <div class="block-down">
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                   <i class="fas fa-plus"></i>
-                                </a>
-                            </div>
+                            <a href="" class="btn-link">
+                                <svg class="inline-svg-icon">
+                                    <use xlink:href="#icon-plus"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1854,11 +2156,11 @@
                             </a>
                         </div>
                         <div class="block-down">
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                   <i class="fas fa-plus"></i>
-                                </a>
-                            </div>
+                            <a href="" class="btn-link">
+                                <svg class="inline-svg-icon">
+                                    <use xlink:href="#icon-plus"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1879,11 +2181,11 @@
                             </a>
                         </div>
                         <div class="block-down">
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                   <i class="fas fa-plus"></i>
-                                </a>
-                            </div>
+                            <a href="" class="btn-link">
+                                <svg class="inline-svg-icon">
+                                    <use xlink:href="#icon-plus"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1904,11 +2206,11 @@
                             </a>
                         </div>
                         <div class="block-down">
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                   <i class="fas fa-plus"></i>
-                                </a>
-                            </div>
+                            <a href="" class="btn-link">
+                                <svg class="inline-svg-icon">
+                                    <use xlink:href="#icon-plus"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1929,11 +2231,11 @@
                             </a>
                         </div>
                         <div class="block-down">
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                   <i class="fas fa-plus"></i>
-                                </a>
-                            </div>
+                            <a href="" class="btn-link">
+                                <svg class="inline-svg-icon">
+                                    <use xlink:href="#icon-plus"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1954,11 +2256,11 @@
                             </a>
                         </div>
                         <div class="block-down">
-                            <div class="cswrp-link">
-                                <a href="" class="btn-link">
-                                   <i class="fas fa-plus"></i>
-                                </a>
-                            </div>
+                            <a href="" class="btn-link">
+                                <svg class="inline-svg-icon">
+                                    <use xlink:href="#icon-plus"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
