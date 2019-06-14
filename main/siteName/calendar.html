@@ -16,6 +16,23 @@
 </head>
 
 <body>
+    <!-- SVG sprite-->
+    <div class="sprite" style="display:none;">
+        <svg aria-hidden="true" id="icon-pencil" focusable="false" data-prefix="fas" data-icon="pencil-alt"
+            class="svg-inline--fa fa-pencil-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
+            <path
+                d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z">
+            </path>
+        </svg>
+        <svg aria-hidden="true" id="icon-times" focusable="false" data-prefix="fas" data-icon="times"
+            class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+            <path
+                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+            </path>
+        </svg>
+    </div>
+    <!---->
     <header class="main-header">
     	<div class="container">
     		<div class="row">
@@ -72,64 +89,28 @@
     		</div>
     	</div>
     </header>
-    <section class="just-show-popap"
-        style="min-height: 800px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
-        <div class="popap-contest">
-            <a href="#" class="cansel">
-                <i class="far fa-times-circle"></i>
-            </a>
-            <div class="title-ntf">
-                <h2>
-                    Balance of contest
-                </h2>
-            </div>
-            <div class="block-price">
-                <span class="price">
-                    <span>700$</span>
-                </span>
-            </div>
-            <div class="wrp-brief">
-                <span class="title-brief">
-                    Choose your contest
-                </span>
-                <span class="my-tooltip">
-                    <i class="far fa-question-circle"
-                        data-title="How muck people in your company asdasdas d as d as d as d  asdasdasd"></i>
-                </span>
-                <div class="select-wrapper">
-                    <i class="fas fa-angle-down"></i>
-                    <select name="format" class="select-brief" value="">
-                        <option value="" selected="" disabled="" hidden=""> </option>
-                        <option>Design for tehnology company</option>
-                        <option>Design for tehnology company</option>
-                    </select>
-                </div>
-            </div>
-            <ul class="price__list">
-                <li class="price__items">
-                    <span>Round 1:</span>
-                    <span></span>
-                    <span>Unpaid</span>
-                </li>
-                <li class="price__items">
-                    <span>Round 2:</span>
-                    <span></span>
-                    <span>Unpaid</span>
-                </li>
-                <li class="price__items">
-                    <span>Winner:</span>
-                    <span></span>
-                    <span>Unpaid</span>
-                </li>
-                <li class="price__items">
-                    <span>Style:</span>
-                    <span></span>
-                    <span>Unpaid</span>
-                </li>
-            </ul>
+    <section class="preview-calendar" style="min-height: 700px; display: flex; align-items: center; justify-content: center;">
+        <div class="calendar">
+            <table id="calendar2">
+                <thead>
+                    <tr>
+                        <td>‹
+                        <td colspan="5">
+                        <td>›
+                    <tr>
+                        <td>Пн
+                        <td>Вт
+                        <td>Ср
+                        <td>Чт
+                        <td>Пт
+                        <td>Сб
+                        <td>Вс
+                <tbody>
+            </table>
         </div>
-
     </section>
+    
+
     <section class="section-fifth">
         <footer class="main-footer">
         	<div class="container">
@@ -276,6 +257,58 @@
         	</div>
         </footer>
     </section>
+
+    <script>
+        function Calendar2(id, year, month) {
+            var Dlast = new Date(year, month + 1, 0).getDate(),
+                D = new Date(year, month, Dlast),
+                DNlast = new Date(D.getFullYear(), D.getMonth(), Dlast).getDay(),
+                DNfirst = new Date(D.getFullYear(), D.getMonth(), 1).getDay(),
+                calendar = '<tr>',
+                month = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь",
+                    "Ноябрь", "Декабрь"
+                ];
+            if (DNfirst != 0) {
+                for (var i = 1; i < DNfirst; i++) calendar += '<td>';
+            } else {
+                for (var i = 0; i < 6; i++) calendar += '<td>';
+            }
+            for (var i = 1; i <= Dlast; i++) {
+                if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() ==
+                    new Date().getMonth()) {
+                    calendar += '<td class="today">' + i;
+                } else {
+                    calendar += '<td>' + i;
+                }
+                if (new Date(D.getFullYear(), D.getMonth(), i).getDay() == 0) {
+                    calendar += '<tr>';
+                }
+            }
+            for (var i = DNlast; i < 7; i++) calendar += '<td>&nbsp;';
+            document.querySelector('#' + id + ' tbody').innerHTML = calendar;
+            document.querySelector('#' + id + ' thead td:nth-child(2)').innerHTML = month[D.getMonth()] + ' ' + D
+                .getFullYear();
+            document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.month = D.getMonth();
+            document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.year = D.getFullYear();
+            if (document.querySelectorAll('#' + id + ' tbody tr').length <
+                6) { // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
+                document.querySelector('#' + id + ' tbody').innerHTML +=
+                    '<tr><td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;';
+            }
+        }
+        Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+        // переключатель минус месяц
+        document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function () {
+            Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year,
+                parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) - 1);
+        }
+        // переключатель плюс месяц
+        document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function () {
+            Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year,
+                parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) + 1);
+        }
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>

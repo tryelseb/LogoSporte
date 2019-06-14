@@ -166,23 +166,11 @@ $(document).ready(function () {
 function test() {
   var ele = document.getElementsByClassName('r1');
   for (var i = 0; i < ele.length; i++) {
-    console.log(i);
 
     function fun1(i) {
-      console.log(i);
       var rng = document.getElementsByClassName('r1')[i];
       var div = document.getElementsByClassName('color')[i];
-      var output = document.getElementsByClassName('i1')[i];
-      var output_mob = document.getElementsByClassName('i2')[i];
-      output.value = rng.value + '%';
-      output_mob.value = rng.value + '%';
       div.style.width = rng.value + '%';
-      if (rng.value == 0) {
-        return output.style.left = 1 + '%';
-      } else if (rng.value > 97) {
-        return output.style.left = 97 + '%';
-      }
-      output.style.left = rng.value + '%';
     }
     fun1(i);
   }
@@ -206,4 +194,3 @@ function contest() {
     },
   ], 300);
 }
-

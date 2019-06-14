@@ -496,6 +496,7 @@
     svg {
         fill: $border-color;
         max-width: 11px;
+        max-height: 15px;
     }
     i {
         width: 30px;
@@ -768,13 +769,13 @@
     background-color: #fff;
     color: $text-color_3;
     i {
-        transition: all .3s;
+        transition: all .1s;
     }
 
     &:hover {
         & i {
             transition: all .3s;
-            transform: scale(1.2);
+             font-size: 30px;
         }
     }
 }
@@ -782,12 +783,12 @@
     background-color: rgba(59, 59, 59, 0.3);
     color: #fff;
     i {
-        transition: all .3s;
+        transition: all .1s;
     }
     &:hover {
        & i {
-        transition: all .3s;
-        transform: scale(1.2);
+        transition: all .1s;
+        font-size: 30px;
        } 
     }
 }
